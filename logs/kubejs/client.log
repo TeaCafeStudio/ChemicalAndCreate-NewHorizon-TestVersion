@@ -1,0 +1,23 @@
+[03:32:19] [INIT] KubeJS 2101.7.2-build.368; MC 2101 NeoForge
+[03:32:19] [INIT] Loaded plugins:
+[03:32:19] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSPlugin
+[03:32:19] [INIT] - dev.latvian.mods.kubejs.plugin.builtin.BuiltinKubeJSClientPlugin
+[03:32:19] [INIT] - dev.latvian.mods.kubejs.integration.architectury.ArchitecturyIntegration
+[03:32:19] [INIT] - net.zhaiji.kubejscurios.kubejs.KubeJSCuriosPlugin
+[03:32:19] [INIT] - com.jesz.createdieselgenerators.compat.kubejs.CDGKubeJSPlugin
+[03:32:19] [INIT] - com.lowdragmc.lowdraglib2.integration.kjs.LDLibKubeJSPlugin
+[03:32:19] [INIT] - cn.dancingsnow.neoecoae.integration.kubejs.NEKubeJSPlugin
+[03:32:19] [INIT] - com.tom.createores.kubejs.KubeJSExcavation
+[03:32:19] [INIT] - com.github.tartaricacid.touhoulittlemaid.compat.kubejs.ModKubeJSPlugin
+[03:32:19] [INIT] - moe.wolfgirl.probejs.plugin.ProbeJSKJSPlugin
+[03:32:19] [INIT] - com.almostreliable.ponderjs.KubePlugin
+[03:32:19] [INIT] - fr.iglee42.createcasing.kubejs.EncasedKJSPlugin
+[03:32:19] [INIT] - dev.latvian.mods.kubejs.create.KubeJSCreatePlugin
+[03:32:19] [INIT] - dev.latvian.mods.kubejs.mekanism.MekanismKubeJSPlugin
+[03:32:19] [INIT] - com.rollylindenshnizzer.appliedkjs.AppliedKJSPlugin
+[03:32:19] [INIT] - com.glodblock.github.extendedae.xmod.kjs.KJSPlugin
+[03:32:19] [INIT] - fr.lucreeper74.createmetallurgy.compat.kubejs.CreateMetallurgyKJS
+[03:32:19] [INFO] client_scripts:main.js#2: Hello, World! (Loaded client example script)
+[03:32:19] [INFO] Loaded script client_scripts:main.js in 0.001 s
+[03:32:19] [INFO] Loaded 1/1 KubeJS client scripts in 0.087 s with 0 errors and 0 warnings
+[03:32:27] [INFO] Client resource reload complete!
