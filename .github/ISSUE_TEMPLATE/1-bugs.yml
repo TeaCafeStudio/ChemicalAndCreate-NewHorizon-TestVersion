@@ -1,4 +1,4 @@
-name: "🐛 BUG反馈 / Bug Report"
+name: "BUG反馈 / Bug Report"
 description: "提交整合包相关问题 / Submit a bug report related to this modpack"
 title: "[BUG] "
 labels:
@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        # 🐛 BUG反馈 / Bug Report
+        # BUG反馈 / Bug Report
         
         感谢你提交BUG报告！
         请认真填写以下内容。信息越完整，我们越容易定位问题。
@@ -25,13 +25,13 @@ body:
       options:
 
         - label: |
-            ✅ 我已经在 Issues 中搜索并确认没有重复的问题后才提交此 Issue。
+            我已经在 Issues 中搜索并确认没有重复的问题后才提交此 Issue。
             
             I have searched existing Issues and confirmed that this is not a duplicate report.
           required: true
 
         - label: |
-            ✅ 我同意提交 Issue 后不会催促处理进度或询问处理进度。
+            我同意提交 Issue 后不会催促处理进度或询问处理进度。
             如果违反此规则，我同意维护者直接关闭此 Issue。
             
             I agree that I will not ask for progress updates or rush the maintainers after submitting this Issue.
@@ -39,7 +39,7 @@ body:
           required: true
 
         - label: |
-            ⚠️ 我只是机械地勾选以上选项，并没有认真阅读内容。
+            我只是机械地勾选以上选项，并没有认真阅读内容。
             我同意维护者直接关闭此 Issue。
             
             I only checked the above options without reading them carefully.
@@ -47,7 +47,7 @@ body:
           required: false
 
         - label: |
-            ✅ 我确认该问题与本整合包本身有关，而不是由于 Mod 冲突、额外安装内容或个人修改导致。
+            我确认该问题与本整合包本身有关，而不是由于 Mod 冲突、额外安装内容或个人修改导致。
             如果问题并非由整合包导致，我同意该 Issue 被直接关闭。
             
             I confirm that this issue is related to the modpack itself, not caused by mod conflicts, additional mods, or personal modifications.
