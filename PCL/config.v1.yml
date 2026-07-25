@@ -13,5 +13,6 @@ VersionNeoForge: 21.1.236
 VersionCleanroom: ''
 VersionVanillaName: 1.21.1
 VersionVanilla: 21.0.1
+LogoCustom: false
 VersionArgumentIndieV2: true
-VersionLaunchCount: 2
+VersionLaunchCount: 3

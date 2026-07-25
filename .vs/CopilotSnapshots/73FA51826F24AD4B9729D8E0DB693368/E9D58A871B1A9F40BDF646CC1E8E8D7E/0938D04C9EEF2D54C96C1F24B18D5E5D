@@ -1,0 +1,30 @@
+﻿// KubeJS Ponder for Fission Reactor Logic Adapter - MC 1.21.1
+Ponder.registry((event) => {
+  event
+    .create('mekanismgenerators:fission_reactor_logic_adapter')
+    .scene('反应堆逻辑适配器', 'fission_logic_adapter', (scene, util) => {
+      scene.showBasePlate()
+      scene.idle(10)
+
+      // 显示逻辑适配器
+      scene.world.setBlock([6, 2, 4], 'mekanismgenerators:fission_reactor_logic_adapter', true)
+      scene.idle(20)
+
+      scene.text(100, '逻辑适配器用于读取反应堆状态并输出红石信号')
+        .placeNearTarget()
+        .pointAt(util.vector.blockSurface([6, 2, 4], 'up'))
+
+      scene.idle(100)
+      scene.text(120, '可以配置当温度或损坏度达到阈值时触发信号')
+        .placeNearTarget()
+        .pointAt(util.vector.blockSurface([6, 2, 4], 'up'))
+
+      scene.idle(120)
+      scene.showControls(20, util.vector.of(6, 3, 4), 'down', 'right')
+      scene.text(100, '右击打开配置界面调整触发条件')
+        .placeNearTarget()
+        .pointAt(util.vector.blockSurface([6, 2, 4], 'up'))
+
+      scene.idle(100)
+    })
+})

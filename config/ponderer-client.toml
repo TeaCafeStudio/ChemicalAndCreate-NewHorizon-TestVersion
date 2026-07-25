@@ -4,7 +4,7 @@
 blueprintCarrierItem = "minecraft:paper"
 #Allow editing scenes that have their 'editable' flag disabled.
 #This is intended for pack authors and advanced maintenance.
-developerMode = false
+developerMode = true
 #Default editable value for newly created scenes and scenes without an explicit editable flag.
 defaultEditable = true
 
@@ -14,14 +14,14 @@ defaultEditable = true
 	configSource = "custom"
 	#LLM provider type: 'anthropic' or 'openai' (OpenAI-compatible).
 	#Use 'openai' for OpenAI, DeepSeek, Groq, Ollama, LM Studio, etc.
-	provider = "openai"
+	provider = "anthropic"
 	#API base URL. Leave empty to use provider defaults.
 	#Anthropic default: https://api.anthropic.com
 	#OpenAI default: https://api.openai.com
 	#For compatible APIs, set to e.g. https://api.deepseek.com
 	apiBaseUrl = ""
 	#API key for the selected provider.
-	apiKey = ""
+	apiKey = "AQ.Ab8RN6JFCaqsVKm93gw-4Rv3oHQJs_jMsIHBuywIIug5q4mb_A"
 	#Model name. Leave empty to use provider defaults.
 	#Anthropic default: claude-sonnet-4-20250514
 	#OpenAI default: gpt-4o
@@ -46,7 +46,7 @@ defaultEditable = true
 	#Default: 16384. Range: 1024-65536. Adjust based on your model limits.
 	# Default: 16384
 	# Range: 1024 ~ 65536
-	maxTokens = 16384
+	maxTokens = 65536
 
 [pack]
 	#Show a chat prompt when a registered pack's scripts have all been deleted.

@@ -1,0 +1,50 @@
+/kubejs reload server-scripts
+/reload
+/kubejs hand
+/reload
+/kill @e[type=item]
+/item
+/kubejs hand
+/back
+/gamerule keepInventory true
+/back
+/time set day
+/kill @e[type=item]
+/mek build fusion
+/mek build remove
+/mek build evaporation
+/mek build remove
+/mek build boiler
+/mek build remove
+/mek build matrix
+/mek build remove
+/mek build sps
+/mek build remove
+/mek build turbine
+/mek build remove
+/time set day
+/mek radiation removeAll
+/kill @e[type=item]
+/
+/invsee
+/neoforge tps
+/ponderer new hand
+/kill @e[type=item]
+/ponderer new hand
+/ponder tags
+/ponder index
+/ponder reload
+/ponder dump
+/ponder index
+/kubejs hand
+/ponder reload
+/ponder index
+/kubejs hand
+/back
+/neoforge tps
+/reload
+/ponder reload
+/ponderer new hand
+/openguiscreen game
+/ponderer new
+/ponderer new hand

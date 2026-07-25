@@ -1,0 +1,524 @@
+{
+  "id": "ponderer:industrial_platform",
+  "items": [
+    "industrial_platform:industrial_platform"
+  ],
+  "title": {
+    "zh_cn": "新场景 - industrial_platform",
+    "en_us": "New Scene - industrial_platform"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "zh_cn": "场景 1",
+        "en_us": "Scene 1"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "industrial_platform:industrial_platform",
+          "blockProperties": {
+            "waterlogged": "false",
+            "floating": "false",
+            "type": "industrial_light"
+          },
+          "blockPos": [
+            2,
+            1,
+            2
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "工业平台可以快速形成一个用于建设工业的地方"
+          },
+          "point": [
+            2.5,
+            1.5,
+            2.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "使用木棍/任意扳手右键……"
+          },
+          "point": [
+            2.5,
+            1.5,
+            2.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 10
+        },
+        {
+          "type": "show_controls",
+          "duration": 20,
+          "point": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "direction": "down",
+          "action": "right",
+          "item": "create:wrench"
+        },
+        {
+          "type": "modify_block_entity_nbt",
+          "blockProperties": {
+            "waterlogged": "false",
+            "floating": "false",
+            "type": "industrial_heavy"
+          },
+          "blockPos": [
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 50
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "……可以更改其平台大小/样式"
+          },
+          "point": [
+            2.5,
+            1.5,
+            2.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "Shift+右键还可以决定他是否清除平台上方方块"
+          },
+          "point": [
+            2.5,
+            1.5,
+            2.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 10
+        },
+        {
+          "type": "show_controls",
+          "duration": 20,
+          "point": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "direction": "down",
+          "action": "right",
+          "item": "create:wrench",
+          "whileSneaking": true
+        },
+        {
+          "type": "modify_block_entity_nbt",
+          "blockProperties": {
+            "waterlogged": "false",
+            "floating": "true",
+            "type": "industrial_heavy"
+          },
+          "blockPos": [
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "hide_section",
+          "duration": 20,
+          "direction": "down",
+          "blockPos": [
+            2,
+            1,
+            2
+          ],
+          "blockPos2": [
+            2,
+            1,
+            2
+          ],
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "destroy_block",
+          "blockPos": [
+            2,
+            1,
+            2
+          ],
+          "destroyParticles": false
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "industrial_platform:industrial_platform",
+          "blockProperties": {
+            "waterlogged": "false",
+            "floating": "false",
+            "type": "checkerboard_light"
+          },
+          "blockPos": [
+            3,
+            1,
+            3
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "idle",
+          "duration": 5
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "industrial_platform:industrial_platform",
+          "blockProperties": {
+            "waterlogged": "false",
+            "floating": "false",
+            "type": "checkerboard_heavy"
+          },
+          "blockPos": [
+            1,
+            1,
+            3
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "idle",
+          "duration": 5
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "industrial_platform:industrial_platform",
+          "blockProperties": {
+            "waterlogged": "false",
+            "floating": "false",
+            "type": "industrial_light"
+          },
+          "blockPos": [
+            3,
+            1,
+            1
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "idle",
+          "duration": 5
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "industrial_platform:industrial_platform",
+          "blockProperties": {
+            "waterlogged": "false",
+            "floating": "false",
+            "type": "industrial_heavy"
+          },
+          "blockPos": [
+            1,
+            1,
+            1
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "zh_cn": "棋盘格,1x1区块"
+          },
+          "point": [
+            3.5,
+            1.0,
+            3.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "zh_cn": "棋盘格,3x3区块"
+          },
+          "point": [
+            1.5,
+            1.0,
+            3.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "zh_cn": "工业平台,1x1区块"
+          },
+          "point": [
+            3.5,
+            1.0,
+            1.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "zh_cn": "工业平台,3x3区块"
+          },
+          "point": [
+            1.5,
+            1.0,
+            1.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "hide_section",
+          "duration": 20,
+          "direction": "down",
+          "blockPos": [
+            3,
+            1,
+            3
+          ],
+          "blockPos2": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 30
+        },
+        {
+          "type": "destroy_block",
+          "blockPos": [
+            3,
+            1,
+            3
+          ],
+          "blockPos2": [
+            1,
+            1,
+            1
+          ],
+          "destroyParticles": false
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "industrial_platform:industrial_platform",
+          "blockProperties": {
+            "waterlogged": "false",
+            "floating": "false",
+            "type": "checkerboard_heavy"
+          },
+          "blockPos": [
+            2,
+            1,
+            2
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "使用任意石头右键平台即可放置平台"
+          },
+          "point": [
+            2.5,
+            1.0,
+            2.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "show_controls",
+          "duration": 20,
+          "point": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "direction": "down",
+          "action": "right",
+          "item": "minecraft:cobblestone"
+        },
+        {
+          "type": "show_extra_structure",
+          "structure": "ponderer:gongyepingtai_ponder",
+          "rotation": 0.0,
+          "blockPos": [
+            -24,
+            1,
+            -24
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "zoom_scene",
+          "duration": 20,
+          "scale": 0.5
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "工业平台放置成功！"
+          },
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "手持任意扳手/木棍/任意石头时可以看到工业平台当前的填充范围边界"
+          },
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "可以同时按下F3+G查看区块边界！"
+          },
+          "placeNearTarget": true
+        }
+      ]
+    }
+  ]
+}

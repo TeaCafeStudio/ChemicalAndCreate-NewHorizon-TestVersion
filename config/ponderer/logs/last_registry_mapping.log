@@ -1,0 +1,18 @@
+Display Name → Registry ID mapping:
+  雪块 → minecraft:snow_block [block/item]
+  白色混凝土 → minecraft:white_concrete [block/item]
+  裂变燃料组件 → mekanismgenerators:fission_fuel_assembly [block/item]  [Lv1: exact match]
+  控制棒组件 → mekanismgenerators:control_rod_assembly [block/item]  [Lv1: exact match]
+  裂变反应堆外壳 → mekanismgenerators:fission_reactor_casing [block/item]  [Lv1: exact match]
+  强化玻璃 → (NOT FOUND — use the exact registry ID, e.g. "mod:block_name")  [Lv4]
+  裂变反应堆端口 → mekanismgenerators:fission_reactor_port [block/item]  [Lv1: exact match]
+  裂变反应堆逻辑适配器 → mekanismgenerators:fission_reactor_logic_adapter [block/item]  [Lv1: exact match]
+  铅锭 → mekanism:ingot_lead [item]  [Lv1: exact match]
+  钢锭 → mekanism:ingot_steel [item] | createmetallurgy:steel_ingot [item]  [Lv2: multiple exact matches, choose appropriate]
+  基础化学品储罐 → mekanism:basic_chemical_tank [block/item]  [Lv1: exact match]
+  裂变燃料 → mekanism:fissile_fuel [chemical]  [Lv1: exact match]
+  水 → minecraft:water [fluid/block] | createoreexcavation:ore_vein_type/water [vein]  [Lv2: multiple exact matches, choose appropriate]
+  蒸汽 → mekanism:steam [fluid/block]  [Lv1: exact match]
+  核废料 → mekanism:nuclear_waste [chemical]  [Lv1: exact match]
+  烈焰棒 → supplementaries:blaze_rod [block] | minecraft:blaze_rod [item]  [Lv2: multiple exact matches, choose appropriate]
+  minecraft:redstone_comparator → minecraft:redstone_comparator
