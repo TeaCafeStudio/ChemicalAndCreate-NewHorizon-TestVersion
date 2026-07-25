@@ -1,0 +1,28 @@
+name: Auto Comment on Supplement Label
+
+on:
+  issues:
+    types:
+      - labeled
+
+permissions:
+  issues: write
+
+jobs:
+  comment:
+    if: github.event.label.name == '✒️需要补充'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add supplement comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.issue;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: "此 Issue 被标记为 ✒️需要补充，请注意：你可能在编写 Issue 时缺失了某一部分，或该问题描述的不够清楚，请在 72 小时内更新 Issue，否则 Issue 将被直接关闭。\n\nThis issue has been marked as ✒️Needs Supplement. Please note: You may have missed a part when writing this issue, or the problem description is not clear enough. Please update the issue within 72 hours, otherwise it will be closed directly."
+            });
