@@ -1,4 +1,4 @@
-name: Auto Comment for Discussion Label
+name: Auto Comment on Discussion Label
 
 on:
   issues:
@@ -9,19 +9,20 @@ permissions:
   issues: write
 
 jobs:
-  close:
+  comment:
     if: github.event.label.name == '💭需要讨论'
     runs-on: ubuntu-latest
 
     steps:
-      - name: Comment and close issue
+      - name: Add discussion comment
         uses: actions/github-script@v7
         with:
           script: |
+            const issue = context.issue;
+
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issue.number,
-              body: 
-              "此 Issue 已被标记为 💭需要讨论，请前往: https://github.com/TeaCafeStudio/ChemicalAndCreate-NewHorizon-TestVersion/discussions/categories/%E6%96%B0%E5%8A%9F%E8%83%BD%E6%8A%95%E7%A5%A8添加新的投票讨论，我们将以投票结果做出决定。\n\nThis issue has been labeled as 💭需要讨论 (Need Discussion). Please visit:https://github.com/TeaCafeStudio/ChemicalAndCreate-NewHorizon-TestVersion/discussions/categories/%E6%96%B0%E5%8A%9F%E8%83%BD%E6%8A%95%E7%A5%A8 to add a new voting discussion. We will make a decision based on the voting results."
+              body: "此 Issue 已被标记为 💭需要讨论，请前往：https://github.com/TeaCafeStudio/ChemicalAndCreate-NewHorizon-TestVersion/discussions/categories/%E6%96%B0%E5%8A%9F%E8%83%BD%E6%8A%95%E7%A5%A8 添加新的投票讨论，我们将以投票结果做出决定。\n\nThis issue has been marked as 💭Discussion Needed. Please visit: https://github.com/TeaCafeStudio/ChemicalAndCreate-NewHorizon-TestVersion/discussions/categories/%E6%96%B0%E5%8A%9F%E8%83%BD%E6%8A%95%E7%A5%A8 to add a new voting discussion. We will make decisions based on the voting results."
             });
