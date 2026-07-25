@@ -1,0 +1,135 @@
+name: "🐛 BUG反馈 / Bug Report"
+description: "提交整合包相关问题 / Submit a bug report related to this modpack"
+title: "[BUG] "
+labels:
+  - bug
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        # 🐛 BUG反馈 / Bug Report
+        
+        感谢你提交BUG报告！
+        请认真填写以下内容。信息越完整，我们越容易定位问题。
+        
+        Thank you for submitting a bug report!
+        Please fill out all information carefully. More details help us locate and fix the issue faster.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "提交前确认 / Confirmation Before Submission"
+      description: "请确认以下所有内容 / Please confirm all statements below"
+      options:
+
+        - label: |
+            ✅ 我已经在 Issues 中搜索并确认没有重复的问题后才提交此 Issue。
+            
+            I have searched existing Issues and confirmed that this is not a duplicate report.
+          required: true
+
+        - label: |
+            ✅ 我同意提交 Issue 后不会催促处理进度或询问处理进度。
+            如果违反此规则，我同意维护者直接关闭此 Issue。
+            
+            I agree that I will not ask for progress updates or rush the maintainers after submitting this Issue.
+            If I violate this rule, I agree that this Issue may be closed directly.
+          required: true
+
+        - label: |
+            ⚠️ 我只是机械地勾选以上选项，并没有认真阅读内容。
+            我同意维护者直接关闭此 Issue。
+            
+            I only checked the above options without reading them carefully.
+            I agree that this Issue may be closed directly.
+          required: false
+
+        - label: |
+            ✅ 我确认该问题与本整合包本身有关，而不是由于 Mod 冲突、额外安装内容或个人修改导致。
+            如果问题并非由整合包导致，我同意该 Issue 被直接关闭。
+            
+            I confirm that this issue is related to the modpack itself, not caused by mod conflicts, additional mods, or personal modifications.
+            If this issue is not caused by the modpack, I agree that it may be closed directly.
+          required: true
+
+
+  - type: input
+    id: title
+    attributes:
+      label: "标题 / Title"
+      description: |
+        请简洁描述问题，例如：
+        [机器无法运行] XXX机器无法工作
+        
+        Please provide a short and clear title.
+        Example:
+        [Machine Not Working] XXX machine does not work
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "描述你发生了什么？ / Describe what happened"
+      description: |
+        请详细描述发生的问题，包括：
+        - 发生了什么
+        - 什么时候发生
+        - 是否可以重复出现
+        
+        Please describe the issue in detail, including:
+        - What happened
+        - When it happened
+        - Whether it can be reproduced
+      placeholder: |
+        中文：
+        游戏中发生了……
+        
+        English:
+        The game behaves like...
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "如何复现？ / How to reproduce?"
+      description: |
+        请提供详细复现步骤。
+        
+        Please provide detailed steps to reproduce the issue.
+      placeholder: |
+        示例 / Example:
+
+        1. 打开游戏 / Launch the game
+        2. 制作XXX物品 / Craft XXX item
+        3. 放置XXX机器 / Place XXX machine
+        4. 问题出现 / The issue occurs
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: latest_log
+    attributes:
+      label: "提交 latest.log 文件 / Submit latest.log file"
+      description: |
+        请上传你的 latest.log 文件，这可以帮助我们更快定位错误。
+        
+        Please upload your latest.log file. This helps us identify the problem faster.
+        
+        推荐上传方式：
+        https://mclo.gs/
+        
+        Recommended upload service:
+        https://mclo.gs/
+      placeholder: |
+        请拖入文件或粘贴链接。
+        
+        Drag and drop your file here or paste the link.
+    validations:
+      required: true
