@@ -2,8 +2,7 @@ name: "BUG反馈 / Bug Report"
 description: "提交整合包相关问题 / Submit a bug report related to this modpack"
 title: "[BUG] "
 labels:
-  - bug
-
+  - "Type: Bug"
 body:
 
   - type: markdown
