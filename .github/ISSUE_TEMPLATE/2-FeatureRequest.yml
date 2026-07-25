@@ -1,0 +1,109 @@
+name: "新功能建议 / Feature Request"
+description: "提出与整合包相关的新玩法、新优化或功能建议 / Suggest new features, improvements, or gameplay ideas"
+title: "[Feature] "
+
+labels:
+  - enhancement
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        # 新功能建议 / Feature Request
+        
+        感谢你为整合包提出建议。
+        请在提交前认真阅读并确认以下内容。
+        
+        Thank you for contributing ideas to this modpack.
+        Please carefully read and confirm the following statements before submitting.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: "提交前确认 / Confirmation Before Submission"
+      description: "请确认以下内容 / Please confirm the following statements"
+      options:
+
+        - label: |
+            我已经阅读历史版本更新内容与更新公告，并确认本 Issue 中描述的内容没有与之前的更新重复。
+            
+            I have read previous version updates and changelogs, and confirmed that the feature requested in this Issue has not already been added or addressed.
+          required: true
+
+        - label: |
+            我已经知晓以下内容：
+            我不会提出破坏游戏平衡的优化建议，也不会提出对游戏体验没有实际帮助的优化建议。
+            
+            I understand that:
+            I will not suggest optimizations that break game balance, and I will not suggest changes that provide no meaningful improvement to gameplay.
+          required: true
+
+        - label: |
+            我只是一味地勾选上述选项，没有仔细阅读历史版本更新内容与更新公告，也没有阅读第二条中的内容。
+            我同意这条 Issue 被直接关闭。
+            
+            I only checked the options above without carefully reading previous updates, changelogs, or the second statement.
+            I agree that this Issue may be closed directly.
+          required: false
+
+        - label: |
+            我不会催促处理进度，也不会询问处理进度。
+            如果违反此规则，我同意这条 Issue 被直接关闭。
+            
+            I will not rush the development process or ask for progress updates.
+            If I violate this rule, I agree that this Issue may be closed directly.
+          required: true
+
+
+  - type: input
+    id: title
+    attributes:
+      label: "标题 / Title"
+      description: |
+        请简洁描述你的功能建议。
+        
+        Please provide a clear and concise title.
+      placeholder: |
+        示例 / Example:
+        添加新的矿物处理流程 / Add a new ore processing system
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: "我希望游戏可以被优化，或者增加新的玩法 / Feature Description"
+      description: |
+        请详细描述你希望添加的功能、优化内容或玩法。
+        
+        Please describe the feature, improvement, or gameplay mechanic you would like to add.
+      placeholder: |
+        中文：
+        我希望游戏可以优化……
+        或者增加……
+        
+        English:
+        I would like the game to be improved by...
+        Or add a new gameplay feature...
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: "处理完成后的预期效果 / Expected Result After Implementation"
+      description: |
+        描述你希望这个 Issue 完成后，游戏会变成什么样子。
+        
+        This section is optional. Describe how you expect the game to change after this feature is implemented.
+      placeholder: |
+        中文：
+        完成后玩家可以……
+        
+        English:
+        After implementation, players will be able to...
+    validations:
+      required: false
