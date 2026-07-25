@@ -1,10 +1,10 @@
 blank_issues_enabled: false
 contact_links:
   - name: '漏洞反馈'
-    url: https://github.com/TeaCafeStudio/ChemicalAndCreate-NewHorizon-TestVersion/issues/new?template=bug.yml
+    url: "https://github.com/TeaCafeStudio/ChemicalAndCreate-NewHorizon-TestVersion/issues/new/choose"
     about: '报告与整合包相关的 bug'
   - name: '优化建议'
-    url: https://github.com/TeaCafeStudio/ChemicalAndCreate-NewHorizon-TestVersion/issues/new?template=optimize.yml
+    url: "https://github.com/TeaCafeStudio/ChemicalAndCreate-NewHorizon-TestVersion/issues/new/choose"
     about: '提出对整合包的优化建议与新功能建设'
   - name: '新功能投票'
     url: https://github.com/TeaCafeStudio/ChemicalAndCreate-NewHorizon-TestVersion/discussions/categories/%E6%96%B0%E5%8A%9F%E8%83%BD%E6%8A%95%E7%A5%A8
