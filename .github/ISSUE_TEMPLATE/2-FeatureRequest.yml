@@ -2,8 +2,7 @@ name: "新功能建议 / Feature Request"
 description: "提出与整合包相关的新玩法、新优化或功能建议 / Suggest new features, improvements, or gameplay ideas"
 title: "[Feature] "
 
-labels:
-  - "Type: 优化"
+type: "优化"
 
 body:
 
