@@ -1,0 +1,660 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 2026-07-26 00:49:18
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.ScriptRuntime.constructError(ScriptRuntime.java:3053) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+-- Mod loading issue for: extendedae --
+Details:
+	Mod file: /E:/Chemical&Create New Horizon/versions/Chemical&Create - New Horizon 0.1.1a/mods/[AE2扩展] ExtendedAE-1.21-2.2.29-neoforge.jar
+	Failure message: ExtendedAE (extendedae) encountered an error while dispatching the net.neoforged.fml.event.lifecycle.FMLLoadCompleteEvent event
+		dev.latvian.mods.rhino.EcmaError: TypeError: Cannot find function getStack in object DeferredHolder{ResourceKey[mekanism:chemical / mekanism:ethene]}. (startup_scripts:invite_call/infinity_chemical_call.js#6)
+	Mod version: 1.21-2.2.29-neoforge
+	Mod issues URL: <No issues URL found>
+	Exception message: dev.latvian.mods.rhino.EcmaError: TypeError: Cannot find function getStack in object DeferredHolder{ResourceKey[mekanism:chemical / mekanism:ethene]}. (startup_scripts:invite_call/infinity_chemical_call.js#6)
+Stacktrace:
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.ScriptRuntime.constructError(ScriptRuntime.java:3053) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.ScriptRuntime.constructError(ScriptRuntime.java:3040) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.ScriptRuntime.typeError(ScriptRuntime.java:3061) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.ScriptRuntime.typeError2(ScriptRuntime.java:3076) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.ScriptRuntime.notFunctionError(ScriptRuntime.java:3131) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.ScriptRuntime.getPropFunctionAndThisHelper(ScriptRuntime.java:1809) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.ScriptRuntime.getPropFunctionAndThis(ScriptRuntime.java:1792) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.Interpreter.interpretLoop(Interpreter.java:871) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.Interpreter.interpret(Interpreter.java:372) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.InterpretedFunction.call(InterpretedFunction.java:72) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.Context.callSync(Context.java:1142) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:mixin,re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.Context.doTopCall(Context.java:1159) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:mixin,re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.InterpretedFunction.call(InterpretedFunction.java:70) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.Context.callSync(Context.java:1142) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:mixin,re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.ArrowFunction.call(ArrowFunction.java:42) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.Context.callSync(Context.java:1142) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:mixin,re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.InterfaceAdapter.invoke(InterfaceAdapter.java:128) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at TRANSFORMER/rhino@2101.2.7-build.85/dev.latvian.mods.rhino.VMBridge$AdapterInvocationHandler.invoke(VMBridge.java:75) ~[%5B犀牛%5D%20rhino-2101.2.7-build.85.jar%23518!/:2101.2.7-build.85] {re:classloading}
+	at jdk.proxy1/jdk.proxy1.$Proxy103.get(Unknown Source) ~[?:?] {}
+	at TRANSFORMER/extendedae@1.21-2.2.29-neoforge/com.glodblock.github.extendedae.common.items.ItemInfinityCell.lambda$new$1(ItemInfinityCell.java:32) ~[%5BAE2扩展%5D%20ExtendedAE-1.21-2.2.29-neoforge.jar%23416!/:?] {re:classloading}
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?] {re:mixin}
+	at TRANSFORMER/extendedae@1.21-2.2.29-neoforge/com.glodblock.github.extendedae.util.LazyInits.initFinal(LazyInits.java:25) ~[%5BAE2扩展%5D%20ExtendedAE-1.21-2.2.29-neoforge.jar%23416!/:?] {re:classloading}
+	at TRANSFORMER/extendedae@1.21-2.2.29-neoforge/com.glodblock.github.extendedae.ExtendedAE.onFinalization(ExtendedAE.java:110) ~[%5BAE2扩展%5D%20ExtendedAE-1.21-2.2.29-neoforge.jar%23416!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:27) ~[bus-8.0.5.jar%23164!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar%23164!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar%23164!/:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.43/net.neoforged.fml.ModContainer.acceptEvent(ModContainer.java:158) ~[loader-4.0.43.jar%23161!/:4.0] {re:mixin}
+	at MC-BOOTSTRAP/fml_loader@4.0.43/net.neoforged.fml.ModLoader.lambda$dispatchParallelEvent$4(ModLoader.java:172) ~[loader-4.0.43.jar%23161!/:4.0] {re:mixin}
+	at MC-BOOTSTRAP/fml_loader@4.0.43/net.neoforged.fml.ModLoader.lambda$dispatchParallelTask$7(ModLoader.java:231) ~[loader-4.0.43.jar%23161!/:4.0] {re:mixin}
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?] {re:mixin}
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1310) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841) ~[?:?] {re:mixin,re:computing_frames}
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806) ~[?:?] {re:mixin,re:computing_frames}
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?] {re:mixin}
+
+
+-- Dynamic Lighting --
+Details:
+	Description: This section contains information related to dynamic lighting, this may not be related to your crash.
+	Mode: fancy
+	Dynamic Light Sources: 0
+	Spatial Hash Occupancy: 0 / 1024
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.10, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 1678042176 bytes (1600 MiB) / 3737124864 bytes (3564 MiB) up to 6551502848 bytes (6248 MiB)
+	CPUs: 32
+	Processor Vendor: GenuineIntel
+	Processor Name: 13th Gen Intel(R) Core(TM) i9-13900HX
+	Identifier: Intel64 Family 6 Model 183 Stepping 1
+	Microarchitecture: Raptor Lake
+	Frequency (GHz): 2.42
+	Number of physical packages: 1
+	Number of physical CPUs: 24
+	Number of logical CPUs: 32
+	Graphics card #0 name: Intel(R) UHD Graphics
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 2048.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.101.5763
+	Graphics card #1 name: NVIDIA GeForce RTX 4060 Laptop GPU
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 8188.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.16.1062
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 5.60
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 5.60
+	Memory slot #1 type: Unknown
+	Virtual memory max (MiB): 31273.74
+	Virtual memory used (MiB): 28614.16
+	Swap memory total (MiB): 15196.25
+	Swap memory used (MiB): 1739.25
+	Space in storage for jna.tmpdir (MiB): available: 47364.17, total: 51200.00
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 47364.17, total: 51200.00
+	Space in storage for io.netty.native.workdir (MiB): available: 47364.17, total: 51200.00
+	Space in storage for java.io.tmpdir (MiB): available: 21987.60, total: 212387.84
+	Space in storage for workdir (MiB): available: 47364.17, total: 51200.00
+	JVM Flags: 6 total; -XX:+UseG1GC -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmn936m -Xmx6246m
+	Loaded Shaderpack: ComplementaryReimagined_r5.8.1.zip
+		Profile: ULTRA (+0 options changed by user)
+	Yumi MC Core: 1.0.0-beta.1+1.21.1
+	Mods: 
+		acceleratedrendering: Accelerated Rendering v1.0.11-1.21.1-alpha
+		advancementplaques: Advancement Plaques v1.6.8
+		ae2: Applied Energistics 2 v19.2.17
+		ae2ct: AE2:Crafting Tree v1.21.1-1.1.1
+		ae2importexportcard: AE2 Import Export Card v1.21.1-1.5.0
+		ae2jeiintegration: AE2 JEI Integration v1.2.1
+		ae2lt: AE2 Lightning Tech v1.1.4
+		ae2omnicells: AE Omni Cells v1.1.6
+		ae2wtlib: AE2WTLib v19.5.0
+		ae2wtlib_api: AE2WTLib API v19.5.0
+		aiimprovements: AI-Improvements v0.5.3
+		alexscaves: Alex's Caves v2.0.10
+		alexsmobs: Alex's Mobs v1.22.17
+		ambientsounds: AmbientSounds v6.3.8
+		apollib: Apollib v1.1.5
+		appex: Applied Experienced v1.3.2
+		appflux: AppliedFlux v1.21-2.1.5-neoforge
+		appleskin: AppleSkin v3.0.9+mc1.21
+		applied_kjs: Applied KubeJS v1.0.0
+		appliedcreate: Applied Create v1.1.5
+		appliedschematicannon: Applied Schematicannon v1.0.4
+		appmek: Applied Mekanistics v1.6.3
+		architectury: Architectury v13.0.8
+		attributefix: AttributeFix v21.1.3
+		balm: Balm v21.0.62
+		betteradvancedtooltips: Better Advanced Tooltips v2101.1.0-build.1
+		bettercaves: YUNG's Better Caves v1.21.1-NeoForge-3.1.4
+		betterdeserttemples: YUNG's Better Desert Temples v1.21.1-NeoForge-4.1.5
+		betterdungeons: YUNG's Better Dungeons v1.21.1-NeoForge-5.1.4
+		betterendisland: YUNG's Better End Island v1.21.1-NeoForge-3.1.2
+		betterf3: BetterF3 v11.0.3
+		betterfortresses: YUNG's Better Nether Fortresses v1.21.1-NeoForge-3.1.5
+		betterjungletemples: YUNG's Better Jungle Temples v1.21.1-NeoForge-3.1.2
+		bettermineshafts: YUNG's Better Mineshafts v1.21.1-NeoForge-5.1.1
+		betteroceanmonuments: YUNG's Better Ocean Monuments v1.21.1-NeoForge-4.1.2
+		betterstrongholds: YUNG's Better Strongholds v1.21.1-NeoForge-5.1.3
+		betterwitchhuts: YUNG's Better Witch Huts v1.21.1-NeoForge-4.1.1
+		biolith: Biolith v3.0.10
+		boatiview: Boat Item View v0.0.6
+		bookshelf: Bookshelf v21.1.81
+		chat_heads: Chat Heads v0.15.2
+		cherishedworlds: Cherished Worlds v10.1.1+1.21.1
+		citadel: Citadel v2.7.6
+		cloth_config: Cloth Config v15 API v15.0.140
+		clumps: Clumps v19.0.0.1
+		comforts: Comforts v9.0.5+1.21.1
+		compat_manager: Compat Manager v1.0.7
+		conditional_mixin: conditional mixin v0.6.4
+		constructionwand: Construction Wand KOTS v2.16.9
+		controlling: Controlling v19.0.5
+		copycats: Create: Copycats+ v3.0.4+mc.1.21.1-neoforge
+		crabbersdelight: Crabber's Delight v1.2.6
+		cratedelight: Crate Delight v26.07.01-1.21-neoforge
+		create: Create v6.0.10
+		create_aquatic_ambitions: Create Aquatic Ambitions v2.0.2
+		create_bic_bit: Create: Bitterballen v1.0.2C
+		create_central_kitchen: Create: Central Kitchen v2.5.0
+		create_connected: Create: Connected v1.3.2-mc1.21.1
+		create_deepfried: Create: Deepfried v0.1.3C
+		create_dragons_plus: Create: Dragons Plus v1.11.2b
+		create_enchantment_industry: Create: Enchantment Industry v2.5.0-preview-alpha1
+		create_integrated_farming: Create: Integrated Farming v1.2.6
+		create_jetpack: Create Jetpack v5.1.2
+		create_new_age: Create: New Age v1.2.0+mc1.21.1
+		create_pattern_schematics: Create: Pattern Schematics v2.0.10
+		create_rustic_structures: Create: Rustic Structures v1.0.1
+		create_sa: Create Stuff 'N Additions v2.1.4.
+		createaddition: Create Crafts & Additions v1.6.0
+		createappliedkinetics: Create: Applied Kinetics v1.5.4-1.21.1
+		createbetterfps: CreateBetterFps v1.1.4
+		createcasing: Create Encased v1.9.0-ht1
+		createdieselgenerators: Create Diesel Generators v1.21.1-1.3.14
+		createentitycontrol: Create:Entity Control v0.6.16.9-6.0.x
+		createframed: Create: Framed v1.8.2
+		createlazytick: Create:Lazy Tick v2.4.9-6.0.x
+		createliquidfuel: Create Liquid Fuel v2.1.1-1.21.1
+		createmetallurgy: Create Metallurgy v1.0.3
+		createmoredrillheads: Create: More Drill Heads v1.2.0-1.21.1
+		createoreexcavation: Create Ore Excavation v1.6.8
+		createprism: Create: Prismatic Shine v1.2.2
+		createrailwaysnavigator: Create Railways Navigator v1.21.1-beta-0.9.1-C6
+		createstockbridge: Create Stock Bridge v0.2.0
+		createultimine: Create Ultimine v1.3.2
+		createutilities: Create Utilities J v0.3.4+1.21.1
+		createvintageneoforged: Create: Vintage NeoForged v1.21.1-1.3.7
+		creativecore: CreativeCore v2.13.41
+		ctm: ConnectedTexturesMod v1.21-1.2.1+3
+		cupboard: Cupboard mod v3.8
+		curios: Curios API v9.5.1+1.21.1
+		delightlib: Delight Lib v26.05.18-1.21-neoforge
+		deployer: Deployer v0.1.2
+		dndesires: Create: Dreams n' Desires v2.3a-BETA
+		dragonlib: DragonLib v1.21.1-beta-3.0.28
+		drippyloadingscreen: Drippy Loading Screen v3.1.2
+		dummmmmmy: MmmMmmMmmMmm v1.21-2.0.12
+		dungeonsdelight: Dungeon's Delight v1.5.0
+		dynamic_fps: Dynamic FPS v3.11.4
+		enchantinginfuser: Enchanting Infuser v21.1.4
+		enchdesc: EnchantmentDescriptions v21.1.10
+		endersdelight: Ender's Delight v1.3.0
+		ends_delight: End's Delight v2.6.1+neoforge.1.21.1
+		entityculling: EntityCulling v1.10.5
+		esl: ESL v1.0.3
+		expandeddelight: Expanded Delight v0.1.4
+		experiencelib: ExperienceLib v1.2.1
+		explorerscompass: Explorer's Compass v1.21.1-3.4.0-neoforge
+		extendedae: ExtendedAE v1.21-2.2.29-neoforge
+		extendedae_plus: ExtendedAE-Plus v1.5.5
+		extra_gauges: Create: Extra Gauges v2.1.2
+		fabric_api_base: Forgified Fabric API Base v0.4.42+d1308ded19
+		fabric_block_view_api_v2: Forgified Fabric BlockView API (v2) v1.0.10+9afaaf8c19
+		fabric_renderer_api_v1: Forgified Fabric Renderer API (v1) v3.4.0+acb05a3919
+		fabric_rendering_data_attachment_v1: Forgified Fabric Rendering Data Attachment (v1) v0.3.48+73761d2e19
+		fancy_entity_renderer: Fancy Entity Renderer v0.4.8
+		fancymenu: FancyMenu v3.9.6
+		farmersdelight: Farmer's Delight v1.3.2
+		fast_projectile_api: Fast Projectile API v3.0.2+4
+		fastbench: Fast Workbench v9.1.3
+		fastfurnace: FastFurnace v9.0.1
+		fastipping: Fast IP Ping v1.0.11
+		fastsuite: Fast Suite v6.0.7
+		fdcf: Farmer's Delight Compatibility Fix v1.0.0
+		ferritecore: Ferrite Core v7.0.3
+		flightlib: Flight Lib v3.2.1
+		fluid: Create: Fluid v1.2.4
+		fluidlogistics: Create: FluidLogistics  v1.0.5
+		flywheel: Flywheel v1.0.6
+		forgeconfigapiport: Forge Config API Port v21.1.1
+		fpsreducer: FPS Reducer v1.21-2.10
+		ftbchunks: FTB Chunks v2101.1.20
+		ftbessentials: FTB Essentials v2101.1.9
+		ftblibrary: FTB Library v2101.1.32
+		ftbquests: FTB Quests v2101.1.27
+		ftbteams: FTB Teams v2101.1.10
+		ftbultimine: FTB Ultimine v2101.1.15
+		glitchcore: GlitchCore v2.1.0.2
+		glodium: Glodium v1.21-2.2-neoforge
+		grandpower: Grand Power v3.0.2
+		guideme: GuideME v21.1.16
+		iceberg: Iceberg v1.3.2
+		imblocker: IMBlocker v5.5.4
+		immediatelyfast: ImmediatelyFast v1.6.11+1.21.1
+		industrial_platform: Industrial Platform v1.8.0
+		integrated_api: Integrated API v1.7.4+1.21.1-neoforge
+		integrated_villages: Integrated Villages v1.3.3+1.21.1-neoforge
+		interiors: Create: Interiors v0.6.1
+		inventoryprofilesnext: Inventory Profiles Next v2.2.5
+		iris: Iris v1.8.8+mc1.21.1
+		itemborders: Item Borders v1.2.5
+		jade: Jade v15.10.5+neoforge
+		jecharacters: Just Enough Characters v4.5.26
+		jei: Just Enough Items v19.36.0.360
+		jei_mekanism_multiblocks: Just Enough Mekanism Multiblocks v7.15
+		konkrete: Konkrete v1.9.9
+		kotlinforforge: Kotlin For Forge v5.12.0
+		kubejs: KubeJS v2101.7.2-build.368
+		kubejs_create: KubeJS Create v2101.3.1-build.18
+		kubejs_curios: KubeJSCurios v1.0.4
+		kubejs_mekanism: KubeJS Mekanism v2101.1.7-build.18
+		kuma_api: KumaAPI v21.0.8
+		l2core: L2Core v3.0.8+3
+		l2damagetracker: L2DamageTracker v3.0.5
+		l2harvester: L2Harvester v3.0.0
+		l2itemselector: L2ItemSelector v3.0.8
+		lambdynlights: LambDynamicLights v4.8.10+1.21.1
+		lambdynlights_api: LambDynamicLights (API) v4.8.10+1.21.1
+		lambdynlights_runtime: LambDynamicLights (Runtime) v4.8.10+1.21.1
+		ldlib2: LowDragLib2 v2.2.28
+		leavesbegone: Leaves Be Gone v21.1.1
+		libipn: libIPN v6.6.3
+		lightmanscurrency: Lightman's Currency v1.21-2.3.0.5
+		lithostitched: Lithostitched v1.7.13
+		lodestone: Lodestone v1.8.2
+		lootr: Lootr v1.21.1-1.11.37.121
+		mekanism: Mekanism v10.7.19
+		mekanism_unleashed: Mekanism Unleashed v1.21.1-0.3.4
+		mekanismadditions: Mekanism: Additions v10.7.19
+		mekanismcovers: Mekanism Covers v1.3-BETA+1.21
+		mekanismgenerators: Mekanism: Generators v10.7.19
+		mekanismtools: Mekanism: Tools v10.7.19
+		mekaweapons: Mekanism: Weapons v4.1
+		melody: Melody v1.0.10
+		midnightlib: MidnightLib v1.9.2
+		minecraft: Minecraft v1.21.1
+		minersdelight: Miners Delight v1.4.5
+		modernfix: ModernFix v5.27.15+mc1.21.1
+		modernui: Modern UI v3.13.0.1
+		moonlight: Moonlight Lib v1.21.1-3.0.22
+		moredelight: More Delight v26.05.20a-1.21-neoforge
+		moremekanismprocessing: More Mekanism Processing v6.8
+		naturescompass: Nature's Compass v1.21.1-3.4.0-neoforge
+		neoecoae: Neo ECO AE Extension v1.3.4
+		neoforge: NeoForge v21.1.236
+		netmusic: Net Music Mod v1.5.1-neoforge+mc1.21.1
+		netmusicbetterlogin: Net Music: Better Login v1.0.4
+		netmusiccanneedqq: NetMusicCanNeedQQ v0.2.1-neoforge-mc1.21.1-beta
+		nochatreports: No Chat Reports v1.21.1-v2.9.1
+		observable: Observable v5.4.4
+		oceansdelight: Ocean's Delight v1.0.4
+		oworld2create: 0World2Create v1.0.0
+		pineapple_delight: Pineapple Delight v1.1.4-1.21.1-neoforge
+		placebo: Placebo v9.9.1
+		polyeng: Polymorphic Energistics v0.4.1
+		polymorph: Polymorph v1.1.0+1.21.1
+		ponder: Ponder v1.0.82+mc1.21.1
+		ponderer: Ponderer v1.10.4
+		ponderjs: PonderJS v1.21.1-2.4.0
+		presencefootsteps: Presence Footsteps (NeoForge) v1.21.1-1.12.0-beta.1
+		prickle: PrickleMC v21.1.11
+		pride: Pride Lib v1.2.4+1.21.1
+		prism: Prism v1.0.11
+		probejs: ProbeJS v8.0.3
+		puzzleslib: Puzzles Lib v21.1.52
+		quark: Quark v4.1-481
+		ratatouille: Ratatouille v1.4.0
+		reeses_sodium_options: Reese's Sodium Options v1.8.3+mc1.21.4
+		rhino: Rhino v2101.2.7-build.85
+		runiclib: RunicLib v5.0.7
+		rusticdelight: Rustic Delight v1.6.1
+		sablecompanion: Sable Companion v1.6.0
+		searchables: Searchables v1.0.2
+		shulkerboxtooltip: ShulkerBoxTooltip v5.1.9+1.21.1
+		smoothchunk: Smoothchunk mod v4.1
+		sodium: Sodium v0.6.13+mc1.21.1
+		sodium_extra: Sodium Extra v0.6.0+mc1.21.1
+		sodiumextras: Sodium Extras v1.0.7
+		sodiumleafculling: Sodium Leaf Culling v1.0.1
+		sodiumoptionsapi: Sodium Options API v1.0.10
+		sophisticatedbackpacks: Sophisticated Backpacks v3.25.69
+		sophisticatedcore: Sophisticated Core v1.4.70
+		sound_physics_remastered: Sound Physics Remastered v1.21.1-1.5.1
+		spark: spark v1.10.124
+		spectrelib: SpectreLib v0.17.2+1.21
+		spruceui: SpruceUI v6.2.5+1.21.1
+		stackedblocks: Stacked Blocks v25.02.13-1.21-neoforge
+		stackedblocksfarmersdelight: Stacked Blocks: Farmer's Delight v25.02.13-1.21-neoforge
+		storagedelight: Storage Delight v26.07.01a-1.21-neoforge
+		streetskubegui: KubeJS GUI 2 v1.0.0
+		supplementaries: Supplementaries v1.21-3.5.26
+		tectonic: Tectonic v3.0.26
+		terrablender: TerraBlender v4.1.0.8
+		terralith: Terralith v2.6.2
+		touhou_little_maid: Touhou Little Maid v1.5.3-neoforge+mc1.21.1
+		transition: TRansition v1.0.21
+		trashslot: TrashSlot v21.1.11
+		travelerstitles: Traveler's Titles v1.21.1-NeoForge-5.1.3
+		trender: TRender v1.0.15
+		ubesdelight: Ube's Delight v0.4.14
+		visualworkbench: Visual Workbench v21.1.1
+		waystones: Waystones v21.1.36
+		xaerolib: XaeroLib v1.5.0
+		xaerominimap: Xaero's Minimap v26.2.1
+		xaeroworldmap: Xaero's World Map v1.42.0
+		youkaishomecoming: Youkai's Homecoming v3.0.8
+		yumi_mc_core: Yumi Minecraft Libraries: Foundation v1.0.0-beta.1+1.21.1
+		yungsapi: YUNG's API v1.21.1-NeoForge-5.1.6
+		yungsbridges: YUNG's Bridges v1.21.1-NeoForge-5.1.1
+		zeta: Zeta v1.1-40
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclient
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.43.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.43.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.43.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar I18nUpdateMod TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		kotlinforforge@5.12.0
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		[别创建新世界！] 0world2create-neoforge-1.21.1-1.0.0.jar |0World2Create                 |oworld2create                 |1.0.0               |Manifest: NOSIGNATURE
+		[加速渲染] acceleratedrendering-1.0.11-1.21.1-alpha.ja|Accelerated Rendering         |acceleratedrendering          |1.0.11-1.21.1-alpha |Manifest: NOSIGNATURE
+		[进度牌匾] AdvancementPlaques-1.21.1-neoforge-1.6.8.ja|Advancement Plaques           |advancementplaques            |1.6.8               |Manifest: NOSIGNATURE
+		[OMNI 存储元件] ae2omnicells-1.21.1-neoforge-1.1.6.jar|AE Omni Cells                 |ae2omnicells                  |1.1.6               |Manifest: NOSIGNATURE
+		[AE2输入输出卡] ae2importexportcard-1.21.1-1.5.0.jar   |AE2 Import Export Card        |ae2importexportcard           |1.21.1-1.5.0        |Manifest: NOSIGNATURE
+		ae2jeiintegration-1.2.1.jar                       |AE2 JEI Integration           |ae2jeiintegration             |1.2.1               |Manifest: NOSIGNATURE
+		[AE2 闪电科技] ae2lt-1.1.4.jar                        |AE2 Lightning Tech            |ae2lt                         |1.1.4               |Manifest: NOSIGNATURE
+		[合成树] ae2ct-1.21.1-1.1.1.jar                      |AE2:Crafting Tree             |ae2ct                         |1.21.1-1.1.1        |Manifest: NOSIGNATURE
+		[AE2无线终端] ae2wtlib-19.5.0.jar                     |AE2WTLib                      |ae2wtlib                      |19.5.0              |Manifest: NOSIGNATURE
+		de.mari_023.ae2wtlib_api-19.5.0.jar               |AE2WTLib API                  |ae2wtlib_api                  |19.5.0              |Manifest: NOSIGNATURE
+		[AI改进] AI-Improvements-1.21-0.5.3.jar             |AI-Improvements               |aiimprovements                |0.5.3               |Manifest: NOSIGNATURE
+		alexscaves-2.0.10.jar                             |Alex's Caves                  |alexscaves                    |2.0.10              |Manifest: NOSIGNATURE
+		alexsmobs-1.22.17.jar                             |Alex's Mobs                   |alexsmobs                     |1.22.17             |Manifest: NOSIGNATURE
+		[自然音效] AmbientSounds_NEOFORGE_v6.3.8_mc1.21.1.jar |AmbientSounds                 |ambientsounds                 |6.3.8               |Manifest: NOSIGNATURE
+		apollib-1.1.5-neoforge-21.1.jar                   |Apollib                       |apollib                       |1.1.5               |Manifest: NOSIGNATURE
+		[苹果皮] appleskin-neoforge-mc1.21-3.0.9.jar         |AppleSkin                     |appleskin                     |3.0.9+mc1.21        |Manifest: NOSIGNATURE
+		[应用机动] appliedcreate-1.21.1-1.1.5.jar             |Applied Create                |appliedcreate                 |1.1.5               |Manifest: NOSIGNATURE
+		[应用能源2] appliedenergistics2-19.2.17.jar           |Applied Energistics 2         |ae2                           |19.2.17             |Manifest: NOSIGNATURE
+		applied-experienced-1.21.1-1.3.2.jar              |Applied Experienced           |appex                         |1.3.2               |Manifest: NOSIGNATURE
+		applied_kjs-1.0.0.jar                             |Applied KubeJS                |applied_kjs                   |1.0.0               |Manifest: NOSIGNATURE
+		[应用能源：通用机械附属] Applied-Mekanistics-1.6.3.jar       |Applied Mekanistics           |appmek                        |1.6.3               |Manifest: NOSIGNATURE
+		appliedschematicannon-1.0.4.jar                   |Applied Schematicannon        |appliedschematicannon         |1.0.4               |Manifest: NOSIGNATURE
+		[应用通量] AppliedFlux-1.21-2.1.5-neoforge.jar        |AppliedFlux                   |appflux                       |1.21-2.1.5-neoforge |Manifest: NOSIGNATURE
+		architectury-13.0.8-neoforge.jar                  |Architectury                  |architectury                  |13.0.8              |Manifest: NOSIGNATURE
+		[属性修复] attributefix-neoforge-1.21.1-21.1.3.jar    |AttributeFix                  |attributefix                  |21.1.3              |Manifest: NOSIGNATURE
+		balm-neoforge-1.21.1-21.0.62.jar                  |Balm                          |balm                          |21.0.62             |Manifest: NOSIGNATURE
+		better-advanced-tooltips-2101.1.0-build.1.jar     |Better Advanced Tooltips      |betteradvancedtooltips        |2101.1.0-build.1    |Manifest: NOSIGNATURE
+		[更好的F3] BetterF3-11.0.3-NeoForge-1.21.1.jar       |BetterF3                      |betterf3                      |11.0.3              |Manifest: NOSIGNATURE
+		biolith-neoforge-3.0.10.jar                       |Biolith                       |biolith                       |3.0.10              |Manifest: NOSIGNATURE
+		[边划边看] boatiview-neoforge-0.0.6-1.21.1.jar        |Boat Item View                |boatiview                     |0.0.6               |Manifest: NOSIGNATURE
+		bookshelf-neoforge-1.21.1-21.1.81.jar             |Bookshelf                     |bookshelf                     |21.1.81             |Manifest: NOSIGNATURE
+		[聊天头像] chat_heads-0.15.2-neoforge-1.21.jar        |Chat Heads                    |chat_heads                    |0.15.2              |Manifest: NOSIGNATURE
+		[存档置顶] cherishedworlds-neoforge-10.1.1+1.21.1.jar |Cherished Worlds              |cherishedworlds               |10.1.1+1.21.1       |Manifest: NOSIGNATURE
+		citadel-1.21.1-2.7.6.jar                          |Citadel                       |citadel                       |2.7.6               |Manifest: NOSIGNATURE
+		cloth-config-15.0.140-neoforge.jar                |Cloth Config v15 API          |cloth_config                  |15.0.140            |Manifest: NOSIGNATURE
+		[经验机制改革] Clumps-neoforge-1.21.1-19.0.0.1.jar      |Clumps                        |clumps                        |19.0.0.1            |Manifest: NOSIGNATURE
+		[舒适用品] comforts-neoforge-9.0.5+1.21.1.jar         |Comforts                      |comforts                      |9.0.5+1.21.1        |Manifest: NOSIGNATURE
+		compat_manager-1.21.1-1.0.7.jar                   |Compat Manager                |compat_manager                |1.0.7               |Manifest: NOSIGNATURE
+		conditional-mixin-neoforge-0.6.4.jar              |conditional mixin             |conditional_mixin             |0.6.4               |Manifest: NOSIGNATURE
+		[连接纹理] CTM-1.21-1.2.1+3.jar                       |ConnectedTexturesMod          |ctm                           |1.21-1.2.1+3        |Manifest: NOSIGNATURE
+		[建筑手杖-耕云钓月版] constructionwand-kots-1.21.1-2.16.9.j|Construction Wand KOTS        |constructionwand              |2.16.9              |Manifest: NOSIGNATURE
+		[键位冲突显示] Controlling-neoforge-1.21.1-19.0.5.jar   |Controlling                   |controlling                   |19.0.5              |Manifest: NOSIGNATURE
+		[蟹农乐事] crabbersdelight-1.21.1-1.2.6.jar           |Crabber's Delight             |crabbersdelight               |1.2.6               |Manifest: NOSIGNATURE
+		[装箱乐事] cratedelight-26.07.01-1.21-neoforge.jar    |Crate Delight                 |cratedelight                  |26.07.01-1.21-neofor|Manifest: NOSIGNATURE
+		[机械动力] create-1.21.1-6.0.10.jar                   |Create                        |create                        |6.0.10              |Manifest: NOSIGNATURE
+		[机械动力：瀚海雄心] create_aquatic_ambitions-1.21.1-2.0.2.|Create Aquatic Ambitions      |create_aquatic_ambitions      |2.0.2               |Manifest: NOSIGNATURE
+		[机械动力：创想附加] createaddition-1.6.0.jar              |Create Crafts & Additions     |createaddition                |1.6.0               |Manifest: NOSIGNATURE
+		[机械动力：柴油动力] createdieselgenerators-1.21.1-1.3.14.j|Create Diesel Generators      |createdieselgenerators        |1.21.1-1.3.14       |Manifest: NOSIGNATURE
+		[机械动力：封装工艺] Create Encased-1.21.1-1.9.0-ht1.jar   |Create Encased                |createcasing                  |1.9.0-ht1           |Manifest: NOSIGNATURE
+		[机械动力：喷气背包] create_jetpack-forge-5.1.2.jar        |Create Jetpack                |create_jetpack                |5.1.2               |Manifest: NOSIGNATURE
+		[机械动力：液体燃料] createliquidfuel-2.1.1-1.21.1.jar     |Create Liquid Fuel            |createliquidfuel              |2.1.1-1.21.1        |Manifest: NOSIGNATURE
+		[机械动力：冶金学] createmetallurgy-1.0.3-1.21.1.jar      |Create Metallurgy             |createmetallurgy              |1.0.3               |Manifest: NOSIGNATURE
+		[机械动力：矿石开掘] createoreexcavation-1.21-1.6.8.jar    |Create Ore Excavation         |createoreexcavation           |1.6.8               |Manifest: NOSIGNATURE
+		[机械动力：铁路导航] createrailwaysnavigator-neoforge-1.21.|Create Railways Navigator     |createrailwaysnavigator       |1.21.1-beta-0.9.1-C6|Manifest: NOSIGNATURE
+		createstockbridge-1.21.1-0.2.0.jar                |Create Stock Bridge           |createstockbridge             |0.2.0               |Manifest: NOSIGNATURE
+		[机械动力：物品附加] create-stuff-additions1.21.1_v2.1.4a.j|Create Stuff 'N Additions     |create_sa                     |2.1.4.              |Manifest: NOSIGNATURE
+		createultimine-1.21.1-neoforge-1.3.2.jar          |Create Ultimine               |createultimine                |1.3.2               |Manifest: NOSIGNATURE
+		[机械动力：实用物品 J版] Create-Utilities-J-1.21.1-0.3.4+1.2|Create Utilities J            |createutilities               |0.3.4+1.21.1        |Manifest: NOSIGNATURE
+		[机械动力：应用机械] createappliedkinetics-1.5.4-1.21.1.jar|Create: Applied Kinetics      |createappliedkinetics         |1.5.4-1.21.1        |Manifest: NOSIGNATURE
+		create_bic_bit-1.0.2C.jar                         |Create: Bitterballen          |create_bic_bit                |1.0.2C              |Manifest: NOSIGNATURE
+		[机械动力：中央厨房] create-central-kitchen-2.5.0.jar      |Create: Central Kitchen       |create_central_kitchen        |2.5.0               |Manifest: NOSIGNATURE
+		[机械动力：创意传动] create_connected-1.3.2-mc1.21.1.jar   |Create: Connected             |create_connected              |1.3.2-mc1.21.1      |Manifest: NOSIGNATURE
+		[机械动力：伪装方块+] copycats-3.0.4+mc.1.21.1-neoforge.jar|Create: Copycats+             |copycats                      |3.0.4+mc.1.21.1-neof|Manifest: NOSIGNATURE
+		[机械动力：油炸] create_deepfried-forge-1.21.1-0.1.3C.jar|Create: Deepfried             |create_deepfried              |0.1.3C              |Manifest: NOSIGNATURE
+		[机械动力：龙+] CreateDragonsPlus-1.11.2b.jar           |Create: Dragons Plus          |create_dragons_plus           |1.11.2b             |Manifest: NOSIGNATURE
+		[机械动力：梦想与欲望] DnDesires-1.21.1-2.3a-BETA.jar       |Create: Dreams n' Desires     |dndesires                     |2.3a-BETA           |Manifest: NOSIGNATURE
+		[机械动力：附魔工业] create-enchantment-industry-2.5.0-prev|Create: Enchantment Industry  |create_enchantment_industry   |2.5.0-preview-alpha1|Manifest: NOSIGNATURE
+		[机械动力：更多仪表] extra_gauges-2.1.2.jar                |Create: Extra Gauges          |extra_gauges                  |2.1.2               |Manifest: NOSIGNATURE
+		fluid-1.2.4.jar                                   |Create: Fluid                 |fluid                         |1.2.4               |Manifest: NOSIGNATURE
+		fluidlogistics-1.0.5.jar                          |Create: FluidLogistics        |fluidlogistics                |1.0.5               |Manifest: NOSIGNATURE
+		[机械动力：多彩边框] createframed-1.21.1-1.8.2.jar         |Create: Framed                |createframed                  |1.8.2               |Manifest: NOSIGNATURE
+		[机械动力：集成农业] create-integrated-farming-1.2.6.jar   |Create: Integrated Farming    |create_integrated_farming     |1.2.6               |Manifest: NOSIGNATURE
+		[机械动力：内饰] interiors-1.21.1-neoforge-0.6.1.jar     |Create: Interiors             |interiors                     |0.6.1               |Manifest: NOSIGNATURE
+		[机械动力：更多钻头] createmoredrillheads-1.2.0-1.21.1.jar |Create: More Drill Heads      |createmoredrillheads          |1.2.0-1.21.1        |Manifest: NOSIGNATURE
+		[机械动力：电气时代] create-new-age-1.2.0+neoforge-mc1.21.1|Create: New Age               |create_new_age                |1.2.0+mc1.21.1      |Manifest: NOSIGNATURE
+		[机械动力：模式蓝图] create_pattern_schematics-2.0.10.jar  |Create: Pattern Schematics    |create_pattern_schematics     |2.0.10              |Manifest: NOSIGNATURE
+		[机械动力：流光溢彩] createprism-1.2.2.jar                 |Create: Prismatic Shine       |createprism                   |1.2.2               |Manifest: NOSIGNATURE
+		[机械动力：乡村结构] create_rustic_structures-1.0.1-neoforg|Create: Rustic Structures     |create_rustic_structures      |1.0.1               |Manifest: NOSIGNATURE
+		createvintageneoforged-1.21.1-1.3.7.jar           |Create: Vintage NeoForged     |createvintageneoforged        |1.21.1-1.3.7        |Manifest: NOSIGNATURE
+		[机械动力：实体控制] CreateEntityControl-0.6.16.9-6.0.x-neo|Create:Entity Control         |createentitycontrol           |0.6.16.9-6.0.x      |Manifest: NOSIGNATURE
+		[机械动力：懒惰刻] CreateLazyTick-2.4.9-6.0.x-neoforge-1.2|Create:Lazy Tick              |createlazytick                |2.4.9-6.0.x         |Manifest: NOSIGNATURE
+		createbetterfps-1.21.1-1.1.4.jar                  |CreateBetterFps               |createbetterfps               |1.1.4               |Manifest: NOSIGNATURE
+		CreativeCore_NEOFORGE_v2.13.41_mc1.21.1.jar       |CreativeCore                  |creativecore                  |2.13.41             |Manifest: NOSIGNATURE
+		cupboard-1.21.1-3.8.jar                           |Cupboard mod                  |cupboard                      |3.8                 |Manifest: NOSIGNATURE
+		curios-neoforge-9.5.1+1.21.1.jar                  |Curios API                    |curios                        |9.5.1+1.21.1        |Manifest: NOSIGNATURE
+		delightlib-26.05.18-1.21-neoforge.jar             |Delight Lib                   |delightlib                    |26.05.18-1.21-neofor|Manifest: NOSIGNATURE
+		deployer-0.1.2.jar                                |Deployer                      |deployer                      |0.1.2               |Manifest: NOSIGNATURE
+		dragonlib-neoforge-1.21.1-beta-3.0.28.jar         |DragonLib                     |dragonlib                     |1.21.1-beta-3.0.28  |Manifest: NOSIGNATURE
+		[自定义游戏加载界面] drippyloadingscreen_neoforge_3.1.2_MC_|Drippy Loading Screen         |drippyloadingscreen           |3.1.2               |Manifest: NOSIGNATURE
+		[地牢乐事] neoforge-dungeonsdelight-1.21.1-1.5.0.jar  |Dungeon's Delight             |dungeonsdelight               |1.5.0               |Manifest: NOSIGNATURE
+		[动态 FPS] dynamic-fps-3.11.4+minecraft-1.21.0-neofo|Dynamic FPS                   |dynamic_fps                   |3.11.4              |Manifest: NOSIGNATURE
+		[附魔灌注台] EnchantingInfuser-v21.1.4-1.21.1-NeoForge.|Enchanting Infuser            |enchantinginfuser             |21.1.4              |Manifest: NOSIGNATURE
+		[附魔描述] enchdesc-neoforge-1.21.1-21.1.10.jar       |EnchantmentDescriptions       |enchdesc                      |21.1.10             |Manifest: NOSIGNATURE
+		[末地乐事] ends_delight-2.6.1+neoforge.1.21.1.jar     |End's Delight                 |ends_delight                  |2.6.1+neoforge.1.21.|Manifest: NOSIGNATURE
+		[末影乐事] endersdelight-1.3.0.jar                    |Ender's Delight               |endersdelight                 |1.3.0               |Manifest: NOSIGNATURE
+		[实体渲染机制优化] entityculling-neoforge-1.10.5-mc1.21.1.|EntityCulling                 |entityculling                 |1.10.5              |Manifest: NOSIGNATURE
+		esl-neoforge-1.21.1-1.0.3+neoforge-mc1.21.1.jar   |ESL                           |esl                           |1.0.3               |Manifest: NOSIGNATURE
+		[扩充乐事] expandeddelight-0.1.4.jar                  |Expanded Delight              |expandeddelight               |0.1.4               |Manifest: NOSIGNATURE
+		experiencelib-1.21.1-1.2.1.jar                    |ExperienceLib                 |experiencelib                 |1.2.1               |Manifest: NOSIGNATURE
+		[探险者指南针] ExplorersCompass-1.21.1-3.4.0-neoforge.ja|Explorer's Compass            |explorerscompass              |1.21.1-3.4.0-neoforg|Manifest: NOSIGNATURE
+		[AE2扩展] ExtendedAE-1.21-2.2.29-neoforge.jar       |ExtendedAE                    |extendedae                    |1.21-2.2.29-neoforge|Manifest: NOSIGNATURE
+		extendedae_plus-1.5.5.jar                         |ExtendedAE-Plus               |extendedae_plus               |1.5.5               |Manifest: NOSIGNATURE
+		fancy-entity-renderer-neoforge-1.21-0.4.8.jar     |Fancy Entity Renderer         |fancy_entity_renderer         |0.4.8               |Manifest: NOSIGNATURE
+		fancymenu_neoforge_3.9.6_MC_1.21.1.jar            |FancyMenu                     |fancymenu                     |3.9.6               |Manifest: NOSIGNATURE
+		[农夫乐事] FarmersDelight-1.21.1-1.3.2.jar            |Farmer's Delight              |farmersdelight                |1.3.2               |Manifest: NOSIGNATURE
+		fdcf-1.0.0.jar                                    |Farmer's Delight Compatibility|fdcf                          |1.0.0               |Manifest: NOSIGNATURE
+		fast-ip-ping-v1.0.11-mc1.21.1-neoforge.jar        |Fast IP Ping                  |fastipping                    |1.0.11              |Manifest: NOSIGNATURE
+		fast_projectile_api-3.0.2+4.jar                   |Fast Projectile API           |fast_projectile_api           |3.0.2+4             |Manifest: NOSIGNATURE
+		[配方性能优化] FastSuite-1.21.1-6.0.7.jar               |Fast Suite                    |fastsuite                     |6.0.7               |Manifest: NOSIGNATURE
+		[工作台性能优化] FastWorkbench-1.21.1-9.1.3.jar          |Fast Workbench                |fastbench                     |9.1.3               |Manifest: NOSIGNATURE
+		[熔炉性能优化] FastFurnace-1.21.1-9.0.1.jar             |FastFurnace                   |fastfurnace                   |9.0.1               |Manifest: NOSIGNATURE
+		[铁氧体磁芯] ferritecore-7.0.3-neoforge.jar            |Ferrite Core                  |ferritecore                   |7.0.3               |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		flightlib-neoforge-3.2.1.jar                      |Flight Lib                    |flightlib                     |3.2.1               |Manifest: NOSIGNATURE
+		flywheel-neoforge-1.21.1-1.0.6.jar                |Flywheel                      |flywheel                      |1.0.6               |Manifest: NOSIGNATURE
+		forgeconfigapiport-neoforge-21.1.1.jar            |Forge Config API Port         |forgeconfigapiport            |21.1.1              |Manifest: NOSIGNATURE
+		fabric-api-base-0.4.42+d1308ded19.jar             |Forgified Fabric API Base     |fabric_api_base               |0.4.42+d1308ded19   |Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar    |Forgified Fabric BlockView API|fabric_block_view_api_v2      |1.0.10+9afaaf8c19   |Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.4.0+acb05a3919.jar       |Forgified Fabric Renderer API |fabric_renderer_api_v1        |3.4.0+acb05a3919    |Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.48+73761d2|Forgified Fabric Rendering Dat|fabric_rendering_data_attachme|0.3.48+73761d2e19   |Manifest: NOSIGNATURE
+		[FPS减速器] FpsReducer2-neoforge-1.21-2.10.jar       |FPS Reducer                   |fpsreducer                    |1.21-2.10           |Manifest: NOSIGNATURE
+		[FTB 区块] ftb-chunks-neoforge-2101.1.20.jar        |FTB Chunks                    |ftbchunks                     |2101.1.20           |Manifest: NOSIGNATURE
+		ftb-essentials-neoforge-2101.1.9.jar              |FTB Essentials                |ftbessentials                 |2101.1.9            |Manifest: NOSIGNATURE
+		ftb-library-neoforge-2101.1.32.jar                |FTB Library                   |ftblibrary                    |2101.1.32           |Manifest: NOSIGNATURE
+		[FTB 任务] ftb-quests-neoforge-2101.1.27.jar        |FTB Quests                    |ftbquests                     |2101.1.27           |Manifest: NOSIGNATURE
+		[FTB 团队] ftb-teams-neoforge-2101.1.10.jar         |FTB Teams                     |ftbteams                      |2101.1.10           |Manifest: NOSIGNATURE
+		[连锁破坏] ftb-ultimine-neoforge-2101.1.15.jar        |FTB Ultimine                  |ftbultimine                   |2101.1.15           |Manifest: NOSIGNATURE
+		GlitchCore-neoforge-1.21.1-2.1.0.2.jar            |GlitchCore                    |glitchcore                    |2.1.0.2             |Manifest: NOSIGNATURE
+		Glodium-1.21-2.2-neoforge.jar                     |Glodium                       |glodium                       |1.21-2.2-neoforge   |Manifest: NOSIGNATURE
+		GrandPower-3.0.2.jar                              |Grand Power                   |grandpower                    |3.0.2               |Manifest: NOSIGNATURE
+		guideme-21.1.16.jar                               |GuideME                       |guideme                       |21.1.16             |Manifest: NOSIGNATURE
+		[冰山] Iceberg-1.21.1-neoforge-1.3.2.jar            |Iceberg                       |iceberg                       |1.3.2               |Manifest: NOSIGNATURE
+		[输入法冲突修复] IMBlocker-5.5.4-neoforge+1.20.6-1.21.8.j|IMBlocker                     |imblocker                     |5.5.4               |Manifest: NOSIGNATURE
+		ImmediatelyFast-NeoForge-1.6.11+1.21.1.jar        |ImmediatelyFast               |immediatelyfast               |1.6.11+1.21.1       |Manifest: NOSIGNATURE
+		[工业平台] Industrial Platform-1.21.1-1.8.0.jar       |Industrial Platform           |industrial_platform           |1.8.0               |Manifest: NOSIGNATURE
+		integrated_api-1.7.4+1.21.1-neoforge.jar          |Integrated API                |integrated_api                |1.7.4+1.21.1-neoforg|Manifest: NOSIGNATURE
+		integrated_villages-1.3.3+1.21.1-neoforge.jar     |Integrated Villages           |integrated_villages           |1.3.3+1.21.1-neoforg|Manifest: NOSIGNATURE
+		[一键背包整理Next] InventoryProfilesNext-neoforge-1.21.1|Inventory Profiles Next       |inventoryprofilesnext         |2.2.5               |Manifest: NOSIGNATURE
+		iris-neoforge-1.8.8+mc1.21.1.jar                  |Iris                          |iris                          |1.8.8+mc1.21.1      |Manifest: NOSIGNATURE
+		[物品边框] ItemBorders-1.21-neoforge-1.2.5.jar        |Item Borders                  |itemborders                   |1.2.5               |Manifest: NOSIGNATURE
+		[玉 🔍] Jade-1.21.1-NeoForge-15.10.5.jar           |Jade                          |jade                          |15.10.5+neoforge    |Manifest: NOSIGNATURE
+		[通用拼音搜索] jecharacters-1.21.1-neoforge-4.5.26.jar  |Just Enough Characters        |jecharacters                  |4.5.26              |Manifest: NOSIGNATURE
+		[JEI物品管理器] jei-1.21.1-neoforge-19.36.0.360.jar    |Just Enough Items             |jei                           |19.36.0.360         |Manifest: NOSIGNATURE
+		JustEnoughMekanismMultiblocks-1.21.1-7.15.jar     |Just Enough Mekanism Multibloc|jei_mekanism_multiblocks      |7.15                |Manifest: NOSIGNATURE
+		konkrete_neoforge_1.9.9_MC_1.21.jar               |Konkrete                      |konkrete                      |1.9.9               |Manifest: NOSIGNATURE
+		thedarkcolour.kffmod-5.12.0.jar                   |Kotlin For Forge              |kotlinforforge                |5.12.0              |Manifest: NOSIGNATURE
+		kubejs-neoforge-2101.7.2-build.368.jar            |KubeJS                        |kubejs                        |2101.7.2-build.368  |Manifest: NOSIGNATURE
+		kubejs-create-neoforge-2101.3.1-build.18.jar      |KubeJS Create                 |kubejs_create                 |2101.3.1-build.18   |Manifest: NOSIGNATURE
+		streetskubegui-neoforge-1.0.0.jar                 |KubeJS GUI 2                  |streetskubegui                |1.0.0               |Manifest: NOSIGNATURE
+		kubejs-mekanism-neoforge-2101.1.7-build.18.jar    |KubeJS Mekanism               |kubejs_mekanism               |2101.1.7-build.18   |Manifest: NOSIGNATURE
+		kubejs_curios_neoforge_1.21.1-1.0.4.jar           |KubeJSCurios                  |kubejs_curios                 |1.0.4               |Manifest: NOSIGNATURE
+		kuma-api-neoforge-21.0.8+1.21.jar                 |KumaAPI                       |kuma_api                      |21.0.8              |Manifest: NOSIGNATURE
+		l2core-3.0.8+3.jar                                |L2Core                        |l2core                        |3.0.8+3             |Manifest: NOSIGNATURE
+		l2damagetracker-3.0.5.jar                         |L2DamageTracker               |l2damagetracker               |3.0.5               |Manifest: NOSIGNATURE
+		l2harvester-3.0.0.jar                             |L2Harvester                   |l2harvester                   |3.0.0               |Manifest: NOSIGNATURE
+		l2itemselector-3.0.8.jar                          |L2ItemSelector                |l2itemselector                |3.0.8               |Manifest: NOSIGNATURE
+		[Lambd的动态光源] lambdynamiclights-4.8.10+1.21.1.jar  |LambDynamicLights             |lambdynlights                 |4.8.10+1.21.1       |Manifest: NOSIGNATURE
+		lambdynamiclights-api-4.8.10+1.21.1-mojmap.jar    |LambDynamicLights (API)       |lambdynlights_api             |4.8.10+1.21.1       |Manifest: NOSIGNATURE
+		lambdynamiclights-4.8.10+1.21.1-neoforge.jar      |LambDynamicLights (Runtime)   |lambdynlights_runtime         |4.8.10+1.21.1       |Manifest: NOSIGNATURE
+		LeavesBeGone-v21.1.1-1.21.1-NeoForge.jar          |Leaves Be Gone                |leavesbegone                  |21.1.1              |Manifest: NOSIGNATURE
+		libIPN-neoforge-1.21.1-6.6.3.jar                  |libIPN                        |libipn                        |6.6.3               |Manifest: NOSIGNATURE
+		lightmanscurrency-1.21-2.3.0.5.jar                |Lightman's Currency           |lightmanscurrency             |1.21-2.3.0.5        |Manifest: NOSIGNATURE
+		lithostitched-1.7.13-neoforge-21.1.jar            |Lithostitched                 |lithostitched                 |1.7.13              |Manifest: NOSIGNATURE
+		lodestone-1.21.1-1.8.2.jar                        |Lodestone                     |lodestone                     |1.8.2               |Manifest: NOSIGNATURE
+		lootr-neoforge-1.21.1-1.11.37.121.jar             |Lootr                         |lootr                         |1.21.1-1.11.37.121  |Manifest: NOSIGNATURE
+		ldlib2-neoforge-1.21.1-2.2.28-all.jar             |LowDragLib2                   |ldlib2                        |2.2.28              |Manifest: NOSIGNATURE
+		[通用机械] Mekanism-1.21.1-10.7.19.85.jar             |Mekanism                      |mekanism                      |10.7.19             |Manifest: NOSIGNATURE
+		mekanismcovers-1.3-BETA+1.21.jar                  |Mekanism Covers               |mekanismcovers                |1.3-BETA+1.21       |Manifest: NOSIGNATURE
+		[通用机械：解放] mekanism_unleashed-0.3.4.jar            |Mekanism Unleashed            |mekanism_unleashed            |1.21.1-0.3.4        |Manifest: NOSIGNATURE
+		[通用机械附加] MekanismAdditions-1.21.1-10.7.19.85.jar  |Mekanism: Additions           |mekanismadditions             |10.7.19             |Manifest: NOSIGNATURE
+		[通用机械发电机] MekanismGenerators-1.21.1-10.7.19.85.jar|Mekanism: Generators          |mekanismgenerators            |10.7.19             |Manifest: NOSIGNATURE
+		[通用机械工具] MekanismTools-1.21.1-10.7.19.85.jar      |Mekanism: Tools               |mekanismtools                 |10.7.19             |Manifest: NOSIGNATURE
+		[通用机械武器] MekanismWeapons-1.21.1-4.1.jar           |Mekanism: Weapons             |mekaweapons                   |4.1                 |Manifest: NOSIGNATURE
+		melody_neoforge_1.0.10_MC_1.21.jar                |Melody                        |melody                        |1.0.10              |Manifest: NOSIGNATURE
+		midnightlib-1.9.2+1.21.1-neoforge.jar             |MidnightLib                   |midnightlib                   |1.9.2               |Manifest: NOSIGNATURE
+		client-1.21.1-20240808.144430-srg.jar             |Minecraft                     |minecraft                     |1.21.1              |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		[矿工乐事] minersdelight-1.21.1-1.4.5.jar             |Miners Delight                |minersdelight                 |1.4.5               |Manifest: NOSIGNATURE
+		[试验假人] dummmmmmy-1.21-2.0.12-neoforge.jar         |MmmMmmMmmMmm                  |dummmmmmy                     |1.21-2.0.12         |Manifest: NOSIGNATURE
+		[现代化 UI] ModernUI-NeoForge-1.21.1-3.13.0.1-univers|Modern UI                     |modernui                      |3.13.0.1            |Manifest: 01:c4:52:25:b1:6e:5f:ac:fe:88:35:7e:cf:65:2f:69:1d:56:db:2b:93:f8:dd:7c:93:47:04:8c:e4:22:13:91
+		[现代化修复] modernfix-neoforge-5.27.15+mc1.21.1.jar   |ModernFix                     |modernfix                     |5.27.15+mc1.21.1    |Manifest: NOSIGNATURE
+		moonlight-neoforge-1.21.1-3.0.22.jar              |Moonlight Lib                 |moonlight                     |1.21.1-3.0.22       |Manifest: NOSIGNATURE
+		[多趣乐事] moredelight-26.05.20a-1.21-neoforge.jar    |More Delight                  |moredelight                   |26.05.20a-1.21-neofo|Manifest: NOSIGNATURE
+		MoreMekanismProcessing-1.21.1-6.8.jar             |More Mekanism Processing      |moremekanismprocessing        |6.8                 |Manifest: NOSIGNATURE
+		[自然罗盘／生物群系指南针] NaturesCompass-1.21.1-3.4.0-neoforg|Nature's Compass              |naturescompass                |1.21.1-3.4.0-neoforg|Manifest: NOSIGNATURE
+		neoecoae-1.3.4.jar                                |Neo ECO AE Extension          |neoecoae                      |1.3.4               |Manifest: NOSIGNATURE
+		neoforge-21.1.236-universal.jar                   |NeoForge                      |neoforge                      |21.1.236            |Manifest: NOSIGNATURE
+		[网络音乐机] netmusic-1.5.1-neoforge+mc1.21.1.jar      |Net Music Mod                 |netmusic                      |1.5.1-neoforge+mc1.2|Manifest: NOSIGNATURE
+		[网络音乐机：更好的登录] nmbl-1.0.4-neoforge-mc1.21.1.jar    |Net Music: Better Login       |netmusicbetterlogin           |1.0.4               |Manifest: NOSIGNATURE
+		[网络音乐机：看你的QQ] netmusiccanneedqq-0.2.1-neoforge-mc1|NetMusicCanNeedQQ             |netmusiccanneedqq             |0.2.1-neoforge-mc1.2|Manifest: NOSIGNATURE
+		[禁用聊天举报] NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar |No Chat Reports               |nochatreports                 |1.21.1-v2.9.1       |Manifest: NOSIGNATURE
+		[可视性能侦测] observable-5.4.4.jar                     |Observable                    |observable                    |5.4.4               |Manifest: NOSIGNATURE
+		[海洋乐事] oceansdelight-neoforge-1.0.4-1.21.1.jar    |Ocean's Delight               |oceansdelight                 |1.0.4               |Manifest: NOSIGNATURE
+		[凤梨乐事] pineapple_delight-1.1.4-1.21.1-neoforge.jar|Pineapple Delight             |pineapple_delight             |1.1.4-1.21.1-neoforg|Manifest: NOSIGNATURE
+		Placebo-1.21.1-9.9.1.jar                          |Placebo                       |placebo                       |9.9.1               |Manifest: NOSIGNATURE
+		[多态合成] polymorph-neoforge-1.1.0+1.21.1.jar        |Polymorph                     |polymorph                     |1.1.0+1.21.1        |Manifest: NOSIGNATURE
+		polyeng-0.4.1.jar                                 |Polymorphic Energistics       |polyeng                       |0.4.1               |Manifest: NOSIGNATURE
+		ponder-neoforge-1.0.82+mc1.21.1.jar               |Ponder                        |ponder                        |1.0.82+mc1.21.1     |Manifest: NOSIGNATURE
+		[思索者] ponderer-1.21.1-neoforge-1.10.4.jar         |Ponderer                      |ponderer                      |1.10.4              |Manifest: NOSIGNATURE
+		ponderjs-neoforge-1.21.1-2.4.0.jar                |PonderJS                      |ponderjs                      |1.21.1-2.4.0        |Manifest: NOSIGNATURE
+		[脚步声NeoForge版] PresenceFootsteps-1.21.1-1.12.0-bet|Presence Footsteps (NeoForge) |presencefootsteps             |1.21.1-1.12.0-beta.1|Manifest: NOSIGNATURE
+		prickle-neoforge-1.21.1-21.1.11.jar               |PrickleMC                     |prickle                       |21.1.11             |Manifest: NOSIGNATURE
+		pridelib-1.2.4+1.21.1-mojmap.jar                  |Pride Lib                     |pride                         |1.2.4+1.21.1        |Manifest: NOSIGNATURE
+		Prism-1.21.1-neoforge-1.0.11.jar                  |Prism                         |prism                         |1.0.11              |Manifest: NOSIGNATURE
+		ProbeJS-8.0.3.jar                                 |ProbeJS                       |probejs                       |8.0.3               |Manifest: NOSIGNATURE
+		PuzzlesLib-v21.1.52-1.21.1-NeoForge.jar           |Puzzles Lib                   |puzzleslib                    |21.1.52             |Manifest: NOSIGNATURE
+		[夸克] Quark-4.1-481.jar                            |Quark                         |quark                         |4.1-481             |Manifest: NOSIGNATURE
+		[机械动力：齿轮与麦穗] create_ratatouille-1.21.1-1.4.0.jar  |Ratatouille                   |ratatouille                   |1.4.0               |Manifest: NOSIGNATURE
+		[Reese的钠视频界面] reeses-sodium-options-neoforge-1.8.3|Reese's Sodium Options        |reeses_sodium_options         |1.8.3+mc1.21.4      |Manifest: NOSIGNATURE
+		[犀牛] rhino-2101.2.7-build.85.jar                  |Rhino                         |rhino                         |2101.2.7-build.85   |Manifest: NOSIGNATURE
+		neoforge-runiclib-1.21.1-5.0.7.jar                |RunicLib                      |runiclib                      |5.0.7               |Manifest: NOSIGNATURE
+		[乡村乐事] rusticdelight-neoforge-1.21-1.6.1.jar      |Rustic Delight                |rusticdelight                 |1.6.1               |Manifest: NOSIGNATURE
+		sable-companion-common-1.21.1-1.6.0.jar           |Sable Companion               |sablecompanion                |1.6.0               |Manifest: NOSIGNATURE
+		Searchables-neoforge-1.21.1-1.0.2.jar             |Searchables                   |searchables                   |1.0.2               |Manifest: NOSIGNATURE
+		[潜影盒提示框] shulkerboxtooltip-neoforge-5.1.9+1.21.1.j|ShulkerBoxTooltip             |shulkerboxtooltip             |5.1.9+1.21.1        |Manifest: NOSIGNATURE
+		[平滑区块保存] smoothchunk-1.21-4.1.jar                 |Smoothchunk mod               |smoothchunk                   |4.1                 |Manifest: NOSIGNATURE
+		[钠] sodium-neoforge-0.6.13+mc1.21.1.jar           |Sodium                        |sodium                        |0.6.13+mc1.21.1     |Manifest: NOSIGNATURE
+		[钠 · 扩展] sodium-extra-neoforge-0.6.0+mc1.21.1.jar |Sodium Extra                  |sodium_extra                  |0.6.0+mc1.21.1      |Manifest: NOSIGNATURE
+		[钠／Embeddium：附属] sodiumextras-neoforge-1.0.8-1.21.|Sodium Extras                 |sodiumextras                  |1.0.7               |Manifest: NOSIGNATURE
+		[钠：树叶剔除] sodiumleafculling-neoforge-1.0.1-1.21.1.j|Sodium Leaf Culling           |sodiumleafculling             |1.0.1               |Manifest: NOSIGNATURE
+		sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar       |Sodium Options API            |sodiumoptionsapi              |1.0.10              |Manifest: NOSIGNATURE
+		[精妙背包] sophisticatedbackpacks-1.21.1-3.25.69.1979.|Sophisticated Backpacks       |sophisticatedbackpacks        |3.25.69             |Manifest: NOSIGNATURE
+		[精妙核心] sophisticatedcore-1.21.1-1.4.70.2131.jar   |Sophisticated Core            |sophisticatedcore             |1.4.70              |Manifest: NOSIGNATURE
+		[物理声效重制版] sound-physics-remastered-neoforge-1.21.1|Sound Physics Remastered      |sound_physics_remastered      |1.21.1-1.5.1        |Manifest: NOSIGNATURE
+		[火花] spark-1.10.124-neoforge.jar                  |spark                         |spark                         |1.10.124            |Manifest: NOSIGNATURE
+		spectrelib-neoforge-0.17.2+1.21.jar               |SpectreLib                    |spectrelib                    |0.17.2+1.21         |Manifest: NOSIGNATURE
+		spruceui-6.2.5+1.21.1-mojmap.jar                  |SpruceUI                      |spruceui                      |6.2.5+1.21.1        |Manifest: NOSIGNATURE
+		[捆扎方块] stackedblocks-25.02.13-1.21-neoforge.jar   |Stacked Blocks                |stackedblocks                 |25.02.13-1.21-neofor|Manifest: NOSIGNATURE
+		[捆扎方块：农夫乐事] stackedblocksfarmersdelight-25.02.13-1|Stacked Blocks: Farmer's Delig|stackedblocksfarmersdelight   |25.02.13-1.21-neofor|Manifest: NOSIGNATURE
+		[存储乐事] storagedelight-26.07.01a-1.21-neoforge.jar |Storage Delight               |storagedelight                |26.07.01a-1.21-neofo|Manifest: NOSIGNATURE
+		[锦致装饰] supplementaries-1.21-3.5.27-neoforge.jar   |Supplementaries               |supplementaries               |1.21-3.5.26         |Manifest: NOSIGNATURE
+		tectonic-3.0.26-neoforge-21.1.jar                 |Tectonic                      |tectonic                      |3.0.26              |Manifest: NOSIGNATURE
+		TerraBlender-neoforge-1.21.1-4.1.0.8.jar          |TerraBlender                  |terrablender                  |4.1.0.8             |Manifest: NOSIGNATURE
+		Terralith_1.21.1_v2.6.2_Neoforge.jar              |Terralith                     |terralith                     |2.6.2               |Manifest: NOSIGNATURE
+		[车万女仆] touhoulittlemaid-1.5.3-neoforge+mc1.21.1.ja|Touhou Little Maid            |touhou_little_maid            |1.5.3-neoforge+mc1.2|Manifest: NOSIGNATURE
+		TRansition-1.0.21-1.21.1-neoforge-SNAPSHOT.jar    |TRansition                    |transition                    |1.0.21              |Manifest: NOSIGNATURE
+		[垃圾槽] trashslot-neoforge-1.21.1-21.1.11.jar       |TrashSlot                     |trashslot                     |21.1.11             |Manifest: NOSIGNATURE
+		[旅人标题] TravelersTitles-1.21.1-NeoForge-5.1.3.jar  |Traveler's Titles             |travelerstitles               |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		TRender-1.0.15-1.21.1-neoforge-SNAPSHOT.jar       |TRender                       |trender                       |1.0.15              |Manifest: NOSIGNATURE
+		[香芋乐事] ubesdelight-neoforge-1.21.1-0.4.14.jar     |Ube's Delight                 |ubesdelight                   |0.4.14              |Manifest: NOSIGNATURE
+		[可视化工作台] VisualWorkbench-v21.1.1-1.21.1-NeoForge.j|Visual Workbench              |visualworkbench               |21.1.1              |Manifest: NOSIGNATURE
+		[传送石碑／指路石] waystones-neoforge-1.21.1-21.1.36.jar  |Waystones                     |waystones                     |21.1.36             |Manifest: NOSIGNATURE
+		[Xaero的小地图] xaerominimap-neoforge-1.21.1-26.2.1.ja|Xaero's Minimap               |xaerominimap                  |26.2.1              |Manifest: NOSIGNATURE
+		[Xaero的世界地图] xaeroworldmap-neoforge-1.21.1-1.42.0.|Xaero's World Map             |xaeroworldmap                 |1.42.0              |Manifest: NOSIGNATURE
+		xaerolib-neoforge-1.21.1-1.5.0.jar                |XaeroLib                      |xaerolib                      |1.5.0               |Manifest: NOSIGNATURE
+		[妖怪们的归家] youkaishomecoming-3.0.8.jar              |Youkai's Homecoming           |youkaishomecoming             |3.0.8               |Manifest: NOSIGNATURE
+		yumi-mc-foundation-1.0.0-beta.1+1.21.1-mojmap.jar |Yumi Minecraft Libraries: Foun|yumi_mc_core                  |1.0.0-beta.1+1.21.1 |Manifest: NOSIGNATURE
+		YungsApi-1.21.1-NeoForge-5.1.6.jar                |YUNG's API                    |yungsapi                      |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		[YUNG 的洞穴优化] YungsBetterCaves-1.21.1-NeoForge-3.1.|YUNG's Better Caves           |bettercaves                   |1.21.1-NeoForge-3.1.|Manifest: NOSIGNATURE
+		[YUNG 的沙漠神殿优化] YungsBetterDesertTemples-1.21.1-Neo|YUNG's Better Desert Temples  |betterdeserttemples           |1.21.1-NeoForge-4.1.|Manifest: NOSIGNATURE
+		[YUNG 的地牢优化] YungsBetterDungeons-1.21.1-NeoForge-5|YUNG's Better Dungeons        |betterdungeons                |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		[YUNG 的末地岛屿优化] YungsBetterEndIsland-1.21.1-NeoForg|YUNG's Better End Island      |betterendisland               |1.21.1-NeoForge-3.1.|Manifest: NOSIGNATURE
+		[YUNG的丛林神庙优化] YungsBetterJungleTemples-1.21.1-NeoF|YUNG's Better Jungle Temples  |betterjungletemples           |1.21.1-NeoForge-3.1.|Manifest: NOSIGNATURE
+		[YUNG 的矿井优化] YungsBetterMineshafts-1.21.1-NeoForge|YUNG's Better Mineshafts      |bettermineshafts              |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		[YUNG 的下界要塞优化] YungsBetterNetherFortresses-1.21.1-|YUNG's Better Nether Fortresse|betterfortresses              |1.21.1-NeoForge-3.1.|Manifest: NOSIGNATURE
+		[YUNG 的海底神殿优化] YungsBetterOceanMonuments-1.21.1-Ne|YUNG's Better Ocean Monuments |betteroceanmonuments          |1.21.1-NeoForge-4.1.|Manifest: NOSIGNATURE
+		[YUNG 的要塞优化] YungsBetterStrongholds-1.21.1-NeoForg|YUNG's Better Strongholds     |betterstrongholds             |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		[YUNG 的沼泽小屋优化] YungsBetterWitchHuts-1.21.1-NeoForg|YUNG's Better Witch Huts      |betterwitchhuts               |1.21.1-NeoForge-4.1.|Manifest: NOSIGNATURE
+		[YUNG 的桥] YungsBridges-1.21.1-NeoForge-5.1.1.jar  |YUNG's Bridges                |yungsbridges                  |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		Zeta-1.1-40.jar                                   |Zeta                          |zeta                          |1.1-40              |Manifest: NOSIGNATURE
+	Crash Report UUID: 71fde6c3-37b2-457d-ba92-1d2049901faf
+	FML: 4.0.43
+	NeoForge: 21.1.236
+	Flywheel Backend: flywheel:off
+	Fragments: Back Stack Index: 0
+FragmentManager misc state:
+  mHost=icyllis.modernui.mc.UIManager$HostCallbacks@61b975f7
+  mContainer=icyllis.modernui.mc.UIManager$HostCallbacks@61b975f7
+  mCurState=7 mStateSaved=false mStopped=false mDestroyed=false

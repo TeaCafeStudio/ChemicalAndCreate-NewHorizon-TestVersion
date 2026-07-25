@@ -16,7 +16,10 @@
 #C94F00 quark:bamboo_chest
 #F1FA90 supplementaries:barnacles
 #189B99 minecraft:barrel
+#B2BF1C mekanism:basic_infusing_factory
 #1D5855 mekanism:basic_universal_cable
+#E152BD create:basin
+#260262 createvintageneoforged:belt_grinder
 #3DE8FE minecraft:birch_leaves
 #3BA928 minecraft:birch_log
 #73D2B3 minecraft:birch_planks
@@ -38,8 +41,10 @@
 #00BE18 minecraft:calcite
 #FC842A minecraft:campfire
 #CB6F00 minecraft:candle
+#31F321 createvintageneoforged:centrifuge
 #AA950D create:chain_conveyor
 #D314C5 quark:charcoal_block
+#58A11C mekanism:chemical_infuser
 #7F3827 createdieselgenerators:chemical_turret
 #C60C30 quark:cherry_leaf_carpet
 #76FDF5 minecraft:cherry_leaves
@@ -91,13 +96,17 @@
 #6B35EC mekanism:creative_fluid_tank
 #73CA69 create:creative_motor
 #4BF61E create:crimsite
+#7386CB ae2:crystal_resonance_generator
+#B58F05 createvintageneoforged:curving_press
 #9950E9 minecraft:cut_red_sandstone
 #2E71D6 minecraft:cut_red_sandstone_slab
 #9B524D create:cut_tuff_brick_stairs
 #3C7D4F create:cut_tuff_stairs
 #B2A2E1 minecraft:dandelion
+#A6EB9C quark:dark_oak_chest
 #A66708 minecraft:dark_oak_log
 #19C8D3 minecraft:dark_oak_planks
+#A4967C minecraft:dark_oak_slab
 #A8FCCC minecraft:dark_oak_stairs
 #2D271D minecraft:dark_oak_trapdoor
 #987616 minecraft:dark_oak_wall_sign
@@ -116,6 +125,7 @@
 #BED665 minecraft:diorite
 #80497A minecraft:dirt
 #4FA7D0 minecraft:dirt_path
+#36A370 create_dragons_plus:dragon_breath
 #D367B9 createoreexcavation:drilling_machine
 #3B0AD1 minecraft:dripstone_block
 #E432BC ae2:drive
@@ -128,6 +138,14 @@
 #C93953 neoecoae:energy_cell_l6
 #C93956 neoecoae:energy_cell_l9
 #752F6D createappliedkinetics:energy_provider
+#DB2766 extendedae:entro_budding_fully
+#5E2A7D extendedae:entro_budding_half
+#635442 extendedae:entro_budding_hardly
+#B188DA extendedae:entro_budding_mostly
+#63ADA6 extendedae:entro_cluster
+#D325A2 extendedae:entro_cluster_large
+#FF8A94 extendedae:entro_cluster_medium
+#3AFF6E extendedae:entro_cluster_small
 #B5B0F1 extendedae:ex_io_port
 #3B842E createoreexcavation:extractor
 #9C9C03 create_connected:fan_splashing_catalyst
@@ -138,6 +156,7 @@
 #895315 mekanismgenerators:fission_reactor_port
 #E66556 minecraft:flowering_azalea_leaves
 #DDC0C3 create:fluid_tank
+#8A9C1E ae2:fluix_block
 #8BD151 mekanismgenerators:fusion_reactor_controller
 #F7D672 mekanismgenerators:fusion_reactor_frame
 #677155 alexscaves:galena
@@ -148,6 +167,7 @@
 #060B35 minecraft:granite
 #3F84B7 minecraft:grass_block
 #88BAFA minecraft:gravel
+#B34925 ae2:growth_accelerator
 #145821 mekanismgenerators:heat_generator
 #6DC2BB quark:hollow_acacia_log
 #6ACC98 quark:hollow_oak_log
@@ -163,6 +183,7 @@
 #3A4E22 minecraft:jungle_fence
 #C1E251 minecraft:jungle_leaves
 #F7CC06 minecraft:jungle_planks
+#7FCA6F minecraft:jungle_slab
 #86FFFF minecraft:jungle_stairs
 #E836E9 create_connected:kinetic_bridge
 #06CAB8 create_connected:kinetic_bridge_destination
@@ -193,6 +214,7 @@
 #694114 visualworkbench:minecraft/crafting_table
 #BB8DD9 createaddition:modular_accumulator
 #0E3CC6 createmetallurgy:molten_netherite
+#759E3C createmetallurgy:molten_void_steel
 #8A7583 minecraft:moss_block
 #5A981B minecraft:moss_carpet
 #A4FC4B minecraft:mossy_cobblestone
@@ -208,6 +230,7 @@
 #35DB43 minecraft:netherite_block
 #C03C6B supplementaries:netherite_trapdoor
 #454322 minecraft:netherrack
+#96804C alexscaves:nuclear_furnace_component
 #6B5D25 quark:oak_chest
 #73753E minecraft:oak_fence
 #AD9EB5 minecraft:oak_leaves
@@ -222,6 +245,7 @@
 #8F6314 minecraft:orange_tulip
 #B29458 mekanism:osmium_ore
 #F6678E minecraft:oxeye_daisy
+#B75237 minecraft:packed_ice
 #B76368 minecraft:packed_mud
 #25EE48 crabbersdelight:palm_leaves
 #AB1C58 minecraft:peony
@@ -236,7 +260,9 @@
 #83E982 quark:polished_dripstone_slab
 #779012 quark:polished_dripstone_stairs
 #AFAC0D minecraft:poppy
+#CB1F3C minecraft:powder_snow
 #E6B35B minecraft:pumpkin
+#DF4F1B ae2:quartz_block
 #EF6A46 mekanism:radioactive_waste_barrel
 #BEEFBE supplementaries:raked_gravel
 #9FCD7C mekanismgenerators:reactor_glass
@@ -248,6 +274,7 @@
 #6CFCB6 minecraft:redstone_lamp
 #991DF8 minecraft:rooted_dirt
 #9C3ECB minecraft:rose_bush
+#A5D223 create:sail_frame
 #86FC77 minecraft:sand
 #7E2654 minecraft:sandstone
 #3C4AE0 create:schematic_table
@@ -268,11 +295,13 @@
 #AA11BA minecraft:smooth_red_sandstone_stairs
 #3A9287 minecraft:smooth_stone
 #CB82F8 minecraft:smooth_stone_slab
+#872D76 minecraft:snow
 #12E6C4 minecraft:snow_block
 #5E33FE minecraft:spruce_door
 #FAE367 minecraft:spruce_fence
 #F522A9 minecraft:spruce_fence_gate
 #13F5AC minecraft:spruce_leaves
+#6A8B3A minecraft:spruce_log
 #49DF61 minecraft:spruce_planks
 #64F88A minecraft:spruce_slab
 #D9135A minecraft:spruce_stairs
@@ -313,12 +342,14 @@
 #C10E6D mekanism:ultimate_mechanical_pipe
 #7DD0FE mekanism:ultimate_pressurized_tube
 #6DB687 create:veridium
+#A61B10 createvintageneoforged:vibrating_table
 #88779D minecraft:vine
 #4A21A1 fluidlogistics:water_containing_copper_casing
 #7D38EB create:water_wheel_structure
 #1C0619 waystones:waystone
 #B04FD6 minecraft:white_candle
 #C6D1CE minecraft:white_concrete
+#B75CCB create:white_sail
 #CE8FAE minecraft:white_terracotta
 #1B60CF minecraft:white_tulip
 #55388C supplementaries:wicker_fence

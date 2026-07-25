@@ -1,0 +1,25 @@
+{
+
+    "item.createvintageneoforged.laser_item": "激光器",
+    "item.createvintageneoforged.iron_spring": "铁弹簧",
+    "item.createvintageneoforged.netherite_sheet": "下界合金板",
+    "item.createvintageneoforged.recipe_card": "配方卡",
+    "item.createvintageneoforged.helve_hammer_slot_cover": "杠杆锤槽盖",
+    "item.createvintageneoforged.v_shaped_curving_head": "V 型封头",
+    "item.createvintageneoforged.w_shaped_curving_head": "W 型封头",
+    "item.createvintageneoforged.concave_curving_head": "凹型封头",
+    "item.createvintageneoforged.convex_curving_head": "凸型封头",
+    "item.createvintageneoforged.iron_rod": "铁棒",
+    "item.createvintageneoforged.grinder_belt": "磨床带",
+    "item.createvintageneoforged.spring_coiling_machine_wheel": "卷簧轮",
+    "block.createvintageneoforged.belt_grinder": "磨床",
+    "block.createvintageneoforged.spring_coiling_machine": "卷簧机",
+    "block.createvintageneoforged.vacuum_chamber": "压缩机",
+    "block.createvintageneoforged.vibrating_table": "振动台",
+    "block.createvintageneoforged.centrifuge": "离心机",
+    "block.createvintageneoforged.curving_press": "弯曲冲压机",
+    "block.createvintageneoforged.lathe": "车床",
+    "block.createvintageneoforged.helve_hammer": "杠杆锤",
+    "block.createvintageneoforged.laser": "激光加工器"
+
+}

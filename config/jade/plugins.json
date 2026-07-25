@@ -52,6 +52,11 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "lightmanscurrency": {
+    "model_variant": true,
+    "model_variant.locked": false,
+    "paygate": true
+  },
   "neoecoae": {
     "eco_drive": true,
     "eco_crafting_worker": true,
@@ -106,6 +111,10 @@
     "wt_channels": true,
     "wt_master_location": true,
     "wt_owner": true
+  },
+  "ae2lt": {
+    "lightning_collector": true,
+    "firmament_conversion_core": true
   },
   "mekanism": {
     "chemical": true,

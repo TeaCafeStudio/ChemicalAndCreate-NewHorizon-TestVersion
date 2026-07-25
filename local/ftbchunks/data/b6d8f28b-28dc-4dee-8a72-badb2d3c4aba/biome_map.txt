@@ -2,8 +2,10 @@
 #572 terralith:arid_highlands
 #556 minecraft:beach
 #1FE terralith:blooming_valley
+#0D6 terralith:cave/diorite_caves
 #674 minecraft:flower_forest
 #1EA terralith:fractured_savanna
+#508 minecraft:frozen_peaks
 #0E5 terralith:highlands
 #4E2 terralith:hot_shrubland
 #11A alexscaves:magnetic_caves
@@ -14,6 +16,7 @@
 #5FF minecraft:river
 #67B minecraft:savanna
 #039 terralith:savanna_badlands
+#524 minecraft:snowy_slopes
 #720 terralith:steppe
 #774 minecraft:sunflower_plains
 #19B terralith:white_mesa
