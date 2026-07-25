@@ -1,0 +1,35 @@
+name: Auto Comment for Discussion Label
+
+on:
+  issues:
+    types:
+      - labeled
+
+permissions:
+  issues: write
+
+jobs:
+  comment:
+    if: github.event.label.name == '[💭需要讨论]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add discussion comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.issue;
+            const discussionUrl = 'https://github.com/TeaCafeStudio/ChemicalAndCreate-NewHorizon-TestVersion/discussions/categories/%E6%96%B0%E5%8A%9F%E8%83%BD%E6%8A%95%E7%A5%A8';
+
+            const commentBody = 
+              `**中文：**\n` +
+              `此 Issue 已被标记为 💭需要讨论，请前往: ${discussionUrl} 添加新的投票讨论，我们将以投票结果做出决定。\n\n` +
+              `**English:**\n` +
+              `This issue has been labeled as 💭需要讨论 (Need Discussion). Please visit: ${discussionUrl} to add a new voting discussion. We will make a decision based on the voting results.`;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: commentBody
+            });
