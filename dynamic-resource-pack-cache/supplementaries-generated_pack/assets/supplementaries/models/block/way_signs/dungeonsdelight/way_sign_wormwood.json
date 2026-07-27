@@ -1,8 +1,0 @@
-{
-	"credit": "Made with Blockbench",
-	"parent": "supplementaries:block/way_signs/template",
-	"textures": {
-		"particle": "supplementaries:block/way_signs/dungeonsdelight/way_sign_wormwood",
-		"sign": "supplementaries:block/way_signs/dungeonsdelight/way_sign_wormwood"
-	}
-}
