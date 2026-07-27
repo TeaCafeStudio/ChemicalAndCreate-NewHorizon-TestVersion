@@ -1,0 +1,45 @@
+# Runtime logs and crash dumps
+logs/
+crash-reports/
+debug/
+
+# Game and launcher caches
+.cache/
+.mixin.out/
+.probe/
+downloads/
+dynamic-data-pack-cache/
+dynamic-resource-pack-cache/
+Chemical&Create - New Horizon 0.1.1a-natives/
+
+# Personal/local game data
+saves/
+screenshots/
+schematics/
+xaero/
+XaeroWaypoints_BACKUP*/
+
+# Launcher/client local state
+essential/
+local/
+PCL/
+ldlib2/
+
+# User-specific and temporary files
+command_history.txt
+observable_announce
+options.txt
+servers.dat
+servers.dat_old
+servers.essential.dat
+TrashSlotSaveState.json
+usercache.json
+usernamecache.json
+.qmenu_opened.marker
+
+# Root generated binary not needed in VCS
+/Chemical&Create - New Horizon 0.1.1a.jar
+
+# MCEF extracted runtime libraries (too large, generated locally)
+mods/mcef-libraries/
+

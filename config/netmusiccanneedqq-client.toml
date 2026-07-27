@@ -1,0 +1,8 @@
+#Default provider for the NetMusic CD burner
+#Allowed Values: NETEASE, QQ
+defaultProvider = "QQ"
+#VIP cookie for QQ Music
+vipCookie = "RK=pXgbC+aBVg; ptcz=bca379b4c5a550ef033e4b66f7221767ea56c4791d168ca56c892cb8443b992d; pgv_pvid=1506789140; fqm_pvqid=49bdf082-ed1b-47b9-a594-15bfb0496e92; ts_uid=4439260726; eas_sid=F1R7C7c6c37435d7E6Y7b1O3s4; music_ignore_pskey=202306271436Hn@vBj; ts_refer=ADTAGnr_clnr_dm63; _ga=GA1.1.1499186042.1783432971; _clck=quvfh7%5E2%5Eg7j%5E0%5E2379; _ga_KWX2PWRQ4D=GS2.1.s1783432971$o1$g1$t1783433001$j30$l0$h0; fqm_sessionid=b8dc7c82-b7a0-4786-9e98-03929241987e; pgv_info=ssid=s9964139655; ts_last=y.qq.com/; _qpsvr_localtk=0.9393728985539387; psrf_qqrefresh_token=; qm_keyst=W_X_63B0aoNpUoZd7EB35rK66DTdceAqR73m7bSgL-RGDXM5Xds_eBIbKixtSIPeQOujyQzWJ4F51Zuyiu0sxznCaeO1j_z_SSg; psrf_qqunionid=; wxuin=1152921505087994291; psrf_qqaccess_token=; qqmusic_key=W_X_63B0aoNpUoZd7EB35rK66DTdceAqR73m7bSgL-RGDXM5Xds_eBIbKixtSIPeQOujyQzWJ4F51Zuyiu0sxznCaeO1j_z_SSg; wxopenid=opCFJw1xFmfGpWYpkqmD1lvj5Kfs; tmeLoginType=1; wxuin=1152921505087994291; euin=oK6kowEAoK4z7KnF7iEq7e-qov**; psrf_qqopenid=; wxrefresh_token=1_VF2TM_uR_lPeCIX5CyrHW98mHfCS2sU3vOS_gy2GoQtYCBVwka3NLG-H0ayAwzKn3s8O9O28Frn3UAvpApFQYazPHbIaAUKKczvG7-MyhI3ulBjUYw; qm_keyst=W_X_63B0aoNpUoZd7EB35rK66DTdceAqR73m7bSgL-RGDXM5Xds_eBIbKixtSIPeQOujyQzWJ4F51Zuyiu0sxznCaeO1j_z_SSg; wxunionid=oqFLxsm5aQIAW9m7uXBzRYvAHl_I; login_type=2"
+#Max audio quality for QQ Music. LOSSLESS may cause playback stuttering with large files.
+#Allowed Values: LOSSLESS, HIGH, STANDARD
+quality = "LOSSLESS"

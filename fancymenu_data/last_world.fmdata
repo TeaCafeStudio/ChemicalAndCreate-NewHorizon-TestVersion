@@ -1,0 +1,7 @@
+type = last_world
+
+last_world {
+  is_server = false
+  world = E:/Chemical&Create New Horizon/versions/Chemical&Create - New Horizon 0.1.1a/saves/新的世界
+}
+

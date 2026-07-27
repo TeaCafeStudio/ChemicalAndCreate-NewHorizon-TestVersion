@@ -1,0 +1,440 @@
+{
+  "id": "ponderer:input_hatch",
+  "items": [
+    "neoecoae:input_hatch"
+  ],
+  "title": {
+    "en_us": "New Scene - crafting_system_l4",
+    "zh_cn": "新场景 - crafting_system_l4"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "en_us": "Scene 1",
+        "zh_cn": "场景 1"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:basic_xl",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "neoecoae:crafting_system_l4",
+          "blockPos": [
+            3,
+            2,
+            1
+          ],
+          "nbt": "{managed:{activeCooling:0b,coolant:0,coolantMaxOverclock:-1,overclocked:0b,selectedBuildLength:1},proxy:{p:0}}",
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "down",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "右键打开主机"
+          },
+          "point": [
+            3.5,
+            2.0,
+            1.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "show_controls",
+          "duration": 20,
+          "point": [
+            3.0,
+            2.5,
+            1.5
+          ],
+          "direction": "up",
+          "action": "right"
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "选择「建造」按钮，选择长度"
+          },
+          "point": [
+            3.5,
+            2.0,
+            1.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "tips:背包里要有对应物品"
+          },
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "开始建造"
+          },
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "show_extra_structure",
+          "structure": "ponderer:hechengjisuanji_f4",
+          "rotation": 0.0,
+          "direction": "down",
+          "blockPos": [
+            3,
+            1,
+            0
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "south",
+          "entranceDuration": 0,
+          "entranceInterval": 5
+        },
+        {
+          "type": "idle",
+          "duration": 25
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "建造完成！"
+          },
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "rotate_camera_y",
+          "duration": 10,
+          "degrees": 90.0
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "这是冷却液输入仓"
+          },
+          "point": [
+            5.0,
+            3.5,
+            0.5
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 65
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "右键打开可以直接使用桶倒入冷却液"
+          },
+          "point": [
+            5.0,
+            3.5,
+            0.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 65
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "也可以使用输出总线倒入冷却液"
+          },
+          "point": [
+            5.0,
+            3.5,
+            0.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 65
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "冷却液可以使合成计算机在超频模式降低耗能"
+          },
+          "point": [
+            5.0,
+            3.5,
+            0.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 65
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "冷却液的配方具体查看JEI"
+          },
+          "point": [
+            5.0,
+            3.5,
+            0.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 65
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "冷却后的液态将存储在冷却液输出仓中"
+          },
+          "point": [
+            5.0,
+            1.5,
+            0.5
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 65
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "使用对应容器或输入总线倒出"
+          },
+          "point": [
+            5.0,
+            1.5,
+            0.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 65
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "线缆接在这里"
+          },
+          "point": [
+            5.0,
+            2.5,
+            0.5
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 65
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "每台主机占用1频道"
+          },
+          "point": [
+            5.0,
+            2.5,
+            0.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 65
+        },
+        {
+          "type": "rotate_camera_y",
+          "duration": 10,
+          "degrees": -90.0
+        },
+        {
+          "type": "idle",
+          "duration": 15
+        },
+        {
+          "type": "text",
+          "duration": 90,
+          "text": {
+            "zh_cn": "右键打开主机可配置是否开启超频与冷却剂消耗"
+          },
+          "point": [
+            3.0,
+            2.5,
+            1.5
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 95
+        },
+        {
+          "type": "hide_section",
+          "duration": 10,
+          "direction": "down",
+          "blockPos": [
+            4,
+            3,
+            6
+          ],
+          "blockPos2": [
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 10
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "多种主机供你选择"
+          },
+          "placeNearTarget": true
+        },
+        {
+          "type": "destroy_block",
+          "blockPos": [
+            3,
+            3,
+            6
+          ],
+          "blockPos2": [
+            4,
+            1,
+            0
+          ],
+          "destroyParticles": false
+        },
+        {
+          "type": "show_extra_structure",
+          "structure": "ponderer:hechengjisuanji_f9",
+          "rotation": 0.0,
+          "direction": "down",
+          "blockPos": [
+            7,
+            1,
+            0
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "idle",
+          "duration": 5
+        },
+        {
+          "type": "show_extra_structure",
+          "structure": "ponderer:hechengjisuanji_f6",
+          "rotation": 0.0,
+          "direction": "down",
+          "blockPos": [
+            4,
+            1,
+            1
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "idle",
+          "duration": 5
+        },
+        {
+          "type": "show_extra_structure",
+          "structure": "ponderer:hechengjisuanji_f4",
+          "rotation": 0.0,
+          "direction": "down",
+          "blockPos": [
+            1,
+            1,
+            2
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        }
+      ]
+    }
+  ]
+}
